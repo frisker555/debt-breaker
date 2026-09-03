@@ -92,6 +92,15 @@ button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visi
 .pwa-update-banner{display:none;position:sticky;top:8px;z-index:30;background:#17232d;border:1px solid #35637a;border-radius:14px;padding:11px 12px;margin:0 0 12px;box-shadow:var(--shadow)}
 .pwa-update-row{display:flex;align-items:center;gap:10px;justify-content:space-between}.pwa-update-copy{font-size:12px;line-height:1.55;color:#dbe7ee}.pwa-update-copy strong{color:var(--blue)}.pwa-update-row button{width:auto;white-space:nowrap;padding:9px 12px;font-size:12px}
 .pwa-action-row{display:grid;grid-template-columns:1fr 1fr;gap:8px}@media(max-width:560px){.pwa-update-row{align-items:stretch;flex-direction:column}.pwa-update-row button{width:100%}.pwa-action-row{grid-template-columns:1fr}}
+
+/* ===== v18.45 QUICK EXPENSE INPUT ===== */
+.quick-expense-card{border-color:#355264;background:linear-gradient(145deg,rgba(17,29,38,.99),rgba(15,22,29,.99))}
+.quick-budget-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:16px}.quick-budget-card{background:#0f151b;border:1px solid #30404c;border-radius:14px;padding:12px}.quick-budget-head{display:flex;justify-content:space-between;align-items:baseline;gap:8px}.quick-budget-head span{font-size:12px;font-weight:900;color:#dce6ec}.quick-budget-head strong{font-size:19px;font-weight:950;font-variant-numeric:tabular-nums}.quick-budget-meta{font-size:10px;color:var(--muted);margin-top:4px;min-height:15px}.quick-budget-progress{height:7px;background:#26313a;border-radius:999px;overflow:hidden;margin-top:8px}.quick-budget-progress>span{display:block;height:100%;width:0;background:linear-gradient(90deg,#7dd3fc,#c4b5fd);border-radius:999px;transition:width .2s}.quick-budget-card.over{border-color:#69424a}.quick-budget-card.over .quick-budget-head strong{color:var(--red)}.quick-budget-card.over .quick-budget-progress>span{background:linear-gradient(90deg,#fbbf24,#fb7185)}
+.quick-amount-field{margin:2px 0 16px}.quick-amount-field label{font-size:13px;font-weight:900;color:#dfe8ee}.quick-amount-wrap{display:grid;grid-template-columns:auto 1fr;align-items:center;gap:8px;background:#0c1218;border:1px solid #3b5261;border-radius:16px;padding:6px 13px}.quick-amount-wrap:focus-within{border-color:#6ab5d7;box-shadow:0 0 0 3px rgba(125,211,252,.10)}.quick-amount-wrap>span{font-size:25px;font-weight:950;color:#a9bac5}.quick-amount-wrap input{border:0;background:transparent;padding:9px 0;font-size:30px;font-weight:950;letter-spacing:-.03em;font-variant-numeric:tabular-nums}.quick-amount-wrap input:focus{box-shadow:none}
+.quick-category-title{font-size:13px;font-weight:950;margin:2px 0 10px}.quick-hidden-select{display:none}.quick-category-group{margin-bottom:12px}.quick-category-group-title{display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin:0 2px 7px}.quick-category-group-title span{font-size:11px;font-weight:900;color:#cdd8df}.quick-category-group-title small{font-size:9px;color:var(--muted)}.quick-category-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}.expense-cat-btn{background:#1c2630;color:#dce5eb;border:1px solid #34424e;padding:11px 7px;min-height:44px;font-size:12px;line-height:1.25}.expense-cat-btn:hover{background:#222f3a}.expense-cat-btn.selected{background:rgba(125,211,252,.14);color:#f5fbff;border-color:#5f9fbd;box-shadow:inset 0 0 0 1px rgba(125,211,252,.12)}.expense-cat-btn.selected:before{content:'✓ ';color:var(--green)}.quick-category-grid-single{grid-template-columns:1fr}
+.quick-expense-preview{background:#0d141a;border:1px solid #2f3f4c;border-radius:13px;padding:11px 12px;margin:13px 0;font-size:12px;line-height:1.65;color:#b9c5ce}.quick-expense-preview strong{font-size:15px;color:#f3f7fa;font-variant-numeric:tabular-nums}.quick-expense-preview.good{border-color:#315e52;background:rgba(52,211,153,.06)}.quick-expense-preview.warn{border-color:#64552e;background:rgba(251,191,36,.06)}.quick-expense-preview.bad{border-color:#69414a;background:rgba(251,113,133,.07)}
+.quick-expense-details{margin-top:10px;border-top:1px dashed #35424d;padding-top:6px}.quick-expense-details summary{cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:10px;padding:8px 2px;color:#aebbc5;font-size:11px;font-weight:850;list-style:none}.quick-expense-details summary::-webkit-details-marker{display:none}.quick-expense-details summary>span:before{content:'＋';display:inline-block;width:18px;color:var(--blue)}.quick-expense-details[open] summary>span:before{content:'−'}.quick-expense-details summary small{font-size:10px;color:#7f8c97;font-weight:700;text-align:right}.quick-expense-details-body{padding-top:7px}
+@media(max-width:520px){.quick-budget-grid{gap:7px}.quick-budget-card{padding:11px}.quick-budget-head strong{font-size:17px}.quick-category-grid{grid-template-columns:repeat(3,1fr);gap:6px}.expense-cat-btn{padding:10px 5px;font-size:11px}.quick-amount-wrap input{font-size:28px}}
 </style>
 <link rel="manifest" href="./manifest.webmanifest">
 <link rel="apple-touch-icon" href="./icons/icon-192.png">
@@ -214,13 +223,27 @@ button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visi
       <button type="button" id="ledgerAnalysisTab" role="tab" aria-selected="false">分析</button>
     </div>
     <div id="ledgerInputPanel">
-    <div class="card action-card"><div class="kicker">QUICK ACTION</div><h2>支出を記録</h2>
-<div class="grid2"><div class="field"><label>日付</label><input id="expenseDate" type="date"/></div><div class="field"><label>カテゴリ</label><select id="expenseCategory"><option>外食</option><option value="コンビニ">コンビニ（嗜好・ついで買い）</option><option>食料品</option><option>交通</option><option>趣味</option><option>日用品</option><option>交際費</option><option value="買い物">嗜好品・買い物</option><option>その他</option></select></div></div>
-<div class="grid2"><div class="field"><label>内容</label><input id="expenseMemo" placeholder="例：ランチ" type="text"/></div><div class="field"><label>金額</label><input id="expenseAmount" min="0" step="100" type="number"/></div></div>
-<div class="field"><label>支払方法</label><select id="expensePaymentMethod"><option value="cash">現金・銀行残高から支払う</option><option value="untracked">残高連動なし</option></select>
-<div class="footer" style="margin-top:5px">現在月の現金払いは現在残高を減らします。カード払いは選んだカード残高を増やします。過去月の入力は現在残高へ反映しません。</div>
+    <div class="card action-card quick-expense-card"><div class="kicker">QUICK EXPENSE</div><h2>支出を記録</h2>
+<div class="quick-budget-grid" aria-label="選択月の予算残高">
+  <div class="quick-budget-card"><div class="quick-budget-head"><span>生活費</span><strong id="quickLivingRemaining">-</strong></div><div class="quick-budget-meta" id="quickLivingMeta">-</div><div class="quick-budget-progress"><span id="quickLivingBar"></span></div></div>
+  <div class="quick-budget-card"><div class="quick-budget-head"><span>自由費</span><strong id="quickFunRemaining">-</strong></div><div class="quick-budget-meta" id="quickFunMeta">-</div><div class="quick-budget-progress"><span id="quickFunBar"></span></div></div>
 </div>
-<button id="addExpenseBtn">支出を追加</button>
+<div class="field quick-amount-field"><label for="expenseAmount">いくら使った？</label><div class="quick-amount-wrap"><span>¥</span><input id="expenseAmount" inputmode="numeric" min="0" placeholder="0" step="100" type="number"/></div></div>
+<div class="quick-category-title">何に使った？</div>
+<select id="expenseCategory" class="quick-hidden-select" aria-hidden="true" tabindex="-1"><option value="">未選択</option><option>外食</option><option value="コンビニ">コンビニ（嗜好・ついで買い）</option><option>食料品</option><option>交通</option><option>趣味</option><option>日用品</option><option>交際費</option><option value="買い物">嗜好品・買い物</option><option>その他</option></select>
+<div class="quick-category-group"><div class="quick-category-group-title"><span>生活費</span><small>残り予算から使う</small></div><div class="quick-category-grid">
+  <button type="button" class="expense-cat-btn" data-category="食料品">食料品</button><button type="button" class="expense-cat-btn" data-category="日用品">日用品</button><button type="button" class="expense-cat-btn" data-category="交通">交通</button>
+</div></div>
+<div class="quick-category-group"><div class="quick-category-group-title"><span>自由費</span><small>使いすぎをチェック</small></div><div class="quick-category-grid">
+  <button type="button" class="expense-cat-btn" data-category="外食">外食</button><button type="button" class="expense-cat-btn" data-category="コンビニ">コンビニ</button><button type="button" class="expense-cat-btn" data-category="趣味">趣味</button><button type="button" class="expense-cat-btn" data-category="買い物">嗜好品・買い物</button><button type="button" class="expense-cat-btn" data-category="交際費">交際費</button>
+</div></div>
+<div class="quick-category-group"><div class="quick-category-group-title"><span>その他</span><small>専用予算なし</small></div><div class="quick-category-grid quick-category-grid-single"><button type="button" class="expense-cat-btn" data-category="その他">その他</button></div></div>
+<div id="expenseQuickPreview" class="quick-expense-preview">金額を入力して、使ったカテゴリをタップしてください。</div>
+<button id="addExpenseBtn">金額とカテゴリを選択</button>
+<details class="quick-expense-details"><summary><span>日付・メモ・支払方法</span><small id="expenseDetailSummary">-</small></summary><div class="quick-expense-details-body">
+  <div class="grid2"><div class="field"><label>日付</label><input id="expenseDate" type="date"/></div><div class="field"><label>内容（任意）</label><input id="expenseMemo" placeholder="例：スーパー、ランチ" type="text"/></div></div>
+  <div class="field"><label>支払方法</label><select id="expensePaymentMethod"><option value="cash">現金・銀行残高から支払う</option><option value="untracked">残高連動なし</option></select><div class="footer" style="margin-top:5px">現在月の現金払いは現在残高を減らします。カード払いは選んだカード残高を増やします。過去月の入力は現在残高へ反映しません。</div></div>
+</div></details>
 </div>
     <details class="card ui-details" open><summary>固定費を支払った（現在月）</summary><div class="details-body"><div class="grid2">
 <div class="field"><label>固定費</label><select id="fixedPayType">
@@ -460,7 +483,7 @@ const FRESH_SETTINGS={
   foodBudget:0,funBudget:0,otherDebt:0,repay:0,arrears:0,arrearsPay:0,
   reserve:0,dailyLimit:0,diningBudget:0,strictMode:true
 };
-const APP_VERSION="18.44";
+const APP_VERSION="18.45";
 const SCHEMA_VERSION=23;
 const appVersionBadge=document.getElementById("appVersionBadge");
 if(appVersionBadge)appVersionBadge.textContent=`v${APP_VERSION}`;
@@ -2931,6 +2954,80 @@ function paymentMethodLabel(v){
   return v;
 }
 
+function quickExpenseBucket(category){
+  if(["食料品","日用品","交通"].includes(category))return"living";
+  if(["外食","コンビニ","趣味","買い物","交際費"].includes(category))return"fun";
+  return"other";
+}
+function setQuickBudgetCard(prefix,used,budget,partial){
+  const remainingEl=document.getElementById(`quick${prefix}Remaining`),metaEl=document.getElementById(`quick${prefix}Meta`),barEl=document.getElementById(`quick${prefix}Bar`);
+  if(!remainingEl||!metaEl||!barEl)return;
+  const card=remainingEl.closest(".quick-budget-card");
+  if(partial){
+    remainingEl.textContent="算定不可";metaEl.textContent="部分記録のため当時の予算不明";barEl.style.width="0%";card?.classList.remove("over");return;
+  }
+  used=Math.max(0,Number(used)||0);budget=Math.max(0,Number(budget)||0);
+  const remaining=Math.max(0,budget-used),over=Math.max(0,used-budget),pct=budget>0?Math.min(100,used/budget*100):(used>0?100:0);
+  remainingEl.textContent=over>0?`超過 ${yen(over)}`:`残り ${yen(remaining)}`;
+  metaEl.textContent=`使用 ${yen(used)} / 予算 ${yen(budget)}`;
+  barEl.style.width=`${pct}%`;
+  card?.classList.toggle("over",over>0);
+}
+function renderQuickExpenseBudgets(){
+  const bd=monthBudgetBreakdown(selectedMonth),partial=isPartialHistoricalMonth(selectedMonth);
+  setQuickBudgetCard("Living",bd.food,bd.plan.foodBudget,partial);
+  setQuickBudgetCard("Fun",bd.fun,bd.plan.funBudget,partial);
+}
+function renderQuickExpenseSelection(){
+  const value=document.getElementById("expenseCategory")?.value||"";
+  document.querySelectorAll(".expense-cat-btn").forEach(btn=>{
+    const selected=btn.dataset.category===value;
+    btn.classList.toggle("selected",selected);
+    btn.setAttribute("aria-pressed",selected?"true":"false");
+  });
+}
+function renderQuickExpenseDetailsSummary(){
+  const el=document.getElementById("expenseDetailSummary");if(!el)return;
+  const date=document.getElementById("expenseDate")?.value||"日付未設定";
+  const method=paymentMethodLabel(document.getElementById("expensePaymentMethod")?.value||"");
+  el.textContent=`${date} / ${method}`;
+}
+function renderQuickExpensePreview(){
+  const preview=document.getElementById("expenseQuickPreview"),button=document.getElementById("addExpenseBtn");
+  if(!preview||!button)return;
+  const amount=formNum("expenseAmount"),category=document.getElementById("expenseCategory")?.value||"";
+  preview.className="quick-expense-preview";
+  if(amount<=0&&!category){preview.textContent="金額を入力して、使ったカテゴリをタップしてください。";button.textContent="金額とカテゴリを選択";return}
+  if(amount<=0){preview.textContent=`${categoryDisplayLabel(category)}を選択中。金額を入力してください。`;button.textContent="金額を入力";return}
+  if(!category){preview.innerHTML=`<strong>${yen(amount)}</strong><br>何に使ったかをカテゴリから選んでください。`;button.textContent="カテゴリを選択";return}
+  button.textContent=`${yen(amount)} を記録`;
+  if(isPartialHistoricalMonth(selectedMonth)){
+    preview.innerHTML=`<strong>${categoryDisplayLabel(category)} / ${yen(amount)}</strong><br>${monthLabel(selectedMonth)}は部分記録のため残り予算は算定しません。支出記録はできます。`;
+    preview.classList.add("warn");return;
+  }
+  const before=monthBudgetBreakdown(selectedMonth),after=monthBudgetBreakdown(selectedMonth,{amount,category}),bucket=quickExpenseBucket(category);
+  if(bucket==="living"||bucket==="fun"){
+    const budget=Math.max(0,Number(bucket==="living"?before.plan.foodBudget:before.plan.funBudget)||0);
+    const usedBefore=Math.max(0,Number(bucket==="living"?before.food:before.fun)||0),usedAfter=Math.max(0,Number(bucket==="living"?after.food:after.fun)||0);
+    const remainingBefore=Math.max(0,budget-usedBefore),remainingAfter=Math.max(0,budget-usedAfter),overAfter=Math.max(0,usedAfter-budget);
+    const label=bucket==="living"?"生活費":"自由費";
+    if(overAfter>0){
+      preview.innerHTML=`<strong>${categoryDisplayLabel(category)} / ${yen(amount)}</strong><br>${label}予算を <strong>${yen(overAfter)}</strong> 超える見込みです（支出前残り ${yen(remainingBefore)}）。`;
+      preview.classList.add("bad");
+    }else{
+      preview.innerHTML=`<strong>${categoryDisplayLabel(category)} / ${yen(amount)}</strong><br>${label}残り　${yen(remainingBefore)} → <strong>${yen(remainingAfter)}</strong>`;
+      preview.classList.add(remainingAfter<=Math.max(1000,budget*.1)?"warn":"good");
+    }
+    return;
+  }
+  const beforeNet=monthIncome(selectedMonth)-before.safe,afterNet=monthIncome(selectedMonth)-after.safe;
+  preview.innerHTML=`<strong>${categoryDisplayLabel(category)} / ${yen(amount)}</strong><br>「その他」は専用予算なし。安全余力　${yen(beforeNet)} → <strong>${yen(afterNet)}</strong>`;
+  preview.classList.add(afterNet<0?"bad":afterNet<10000?"warn":"good");
+}
+function renderQuickExpenseUI(){
+  renderQuickExpenseBudgets();renderQuickExpenseSelection();renderQuickExpenseDetailsSummary();renderQuickExpensePreview();
+}
+
 function renderFeeTargets(){
   const sel=document.getElementById("feeTarget"),old=sel.value;
   let opts="";
@@ -3055,6 +3152,7 @@ function refresh(){
   setMetric("totalDebtView",yen(debt),debt>0?"red":"green");
 
   renderExpensePaymentOptions();
+  renderQuickExpenseUI();
   renderRepayTargets();
   renderFeeTargets();
   renderExpenses();
@@ -3456,7 +3554,14 @@ function syncAccountCashOption(){
     document.getElementById("accountChangeReason").disabled=false;
   }
 }
-document.getElementById("expenseDate").addEventListener("change",()=>{expenseDateUserEdited=true});
+document.getElementById("expenseDate").addEventListener("change",()=>{expenseDateUserEdited=true;renderQuickExpenseDetailsSummary()});
+document.getElementById("expenseAmount").addEventListener("input",renderQuickExpensePreview);
+document.getElementById("expensePaymentMethod").addEventListener("change",renderQuickExpenseDetailsSummary);
+document.querySelectorAll(".expense-cat-btn").forEach(btn=>btn.addEventListener("click",()=>{
+  const sel=document.getElementById("expenseCategory");if(!sel)return;
+  sel.value=btn.dataset.category||"";
+  renderQuickExpenseSelection();renderQuickExpensePreview();
+}));
 document.getElementById("actualRepayDate").addEventListener("change",()=>{actualRepayDateUserEdited=true});
 document.getElementById("fixedPayDate").addEventListener("change",()=>{fixedPayDateUserEdited=true});
 document.getElementById("accountType").onchange=syncAccountCashOption;
@@ -3503,7 +3608,8 @@ document.getElementById("addExpenseBtn").onclick=()=>{
   const date=document.getElementById("expenseDate").value||isoForSelectedMonth();
   if(!date.startsWith(selectedMonth)){alert("支出日は現在選択している月の範囲で入力してください。");return}
   if(selectedMonth===currentMonthKey()&&date>todayISO()){alert("未来日の支出は実支出として登録できません。予定支出はまだ現在残高へ反映しません。");return}
-  const category=document.getElementById("expenseCategory").value,memo=document.getElementById("expenseMemo").value.trim(),method=document.getElementById("expensePaymentMethod").value;
+  const category=document.getElementById("expenseCategory").value;if(!category){alert("何に使ったかカテゴリを選択してください");return}
+  const memo=document.getElementById("expenseMemo").value.trim(),method=document.getElementById("expensePaymentMethod").value;
   const current=date.startsWith(currentMonthKey());
   const id=uid();let balanceApplied=false;
   const debtCampaignBefore=current&&method.startsWith("account:")?captureCampaignCheckpoint():null;
@@ -3526,7 +3632,9 @@ document.getElementById("addExpenseBtn").onclick=()=>{
   })){
     document.getElementById("expenseAmount").value="";
     document.getElementById("expenseMemo").value="";
+    document.getElementById("expenseCategory").value="";
     expenseDateUserEdited=false;
+    renderQuickExpenseUI();
     showSaveToast("支出を登録しました",`${memo||categoryDisplayLabel(category)} / ${yen(amount)}`);
   }
 };
@@ -4472,7 +4580,7 @@ setInterval(()=>{if(currentMonthKey()!==runtimeMonth||todayISO()!==runtimeDay)re
 window.addEventListener("focus",()=>{if(currentMonthKey()!==runtimeMonth||todayISO()!==runtimeDay)refresh()});
 document.addEventListener("visibilitychange",()=>{if(!document.hidden&&(currentMonthKey()!==runtimeMonth||todayISO()!==runtimeDay))refresh()});
 
-// ===== PWA / controlled update layer (v18.44) =====
+// ===== PWA / controlled update layer (v18.45) =====
 let deferredPwaInstallPrompt=null;
 let pwaRegistration=null;
 let pwaReloading=false;

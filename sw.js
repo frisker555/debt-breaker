@@ -1,4 +1,4 @@
-const APP_VERSION="18.44";
+const APP_VERSION="18.45";
 const CACHE_NAME=`debt-breaker-v${APP_VERSION}-shell-v1`;
 const BASE_URL=new URL("./",self.location).href;
 const INDEX_URL=new URL("index.html",BASE_URL).href;
