@@ -101,6 +101,12 @@ button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visi
 .quick-expense-preview{background:#0d141a;border:1px solid #2f3f4c;border-radius:13px;padding:11px 12px;margin:13px 0;font-size:12px;line-height:1.65;color:#b9c5ce}.quick-expense-preview strong{font-size:15px;color:#f3f7fa;font-variant-numeric:tabular-nums}.quick-expense-preview.good{border-color:#315e52;background:rgba(52,211,153,.06)}.quick-expense-preview.warn{border-color:#64552e;background:rgba(251,191,36,.06)}.quick-expense-preview.bad{border-color:#69414a;background:rgba(251,113,133,.07)}
 .quick-expense-details{margin-top:10px;border-top:1px dashed #35424d;padding-top:6px}.quick-expense-details summary{cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:10px;padding:8px 2px;color:#aebbc5;font-size:11px;font-weight:850;list-style:none}.quick-expense-details summary::-webkit-details-marker{display:none}.quick-expense-details summary>span:before{content:'＋';display:inline-block;width:18px;color:var(--blue)}.quick-expense-details[open] summary>span:before{content:'−'}.quick-expense-details summary small{font-size:10px;color:#7f8c97;font-weight:700;text-align:right}.quick-expense-details-body{padding-top:7px}
 @media(max-width:520px){.quick-budget-grid{gap:7px}.quick-budget-card{padding:11px}.quick-budget-head strong{font-size:17px}.quick-category-grid{grid-template-columns:repeat(3,1fr);gap:6px}.expense-cat-btn{padding:10px 5px;font-size:11px}.quick-amount-wrap input{font-size:28px}}
+
+/* ===== v18.47 GLOBAL QUICK EXPENSE FAB ===== */
+.quick-expense-fab{position:fixed;right:max(16px,calc((100vw - 1000px)/2 + 16px));bottom:calc(88px + env(safe-area-inset-bottom));z-index:25;width:58px;height:58px;border-radius:50%;padding:0;display:grid;place-items:center;background:linear-gradient(145deg,#f5fbff,#dcebf3);color:#111820;border:1px solid rgba(125,211,252,.7);box-shadow:0 12px 28px rgba(0,0,0,.38),0 0 0 4px rgba(125,211,252,.08);font-size:34px;font-weight:500;line-height:1;touch-action:manipulation}
+.quick-expense-fab:hover{transform:translateY(-1px)}.quick-expense-fab:active{transform:scale(.95)}
+.quick-expense-fab:focus-visible{outline:3px solid rgba(125,211,252,.38);outline-offset:3px}
+@media(max-width:620px){.quick-expense-fab{right:15px;bottom:calc(80px + env(safe-area-inset-bottom));width:56px;height:56px;font-size:32px}}
 </style>
 <link rel="manifest" href="./manifest.webmanifest">
 <link rel="apple-touch-icon" href="./icons/icon-192.png">
@@ -423,7 +429,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visi
   <section id="settings" class="page">
     <div class="card"><div class="kicker">SETTINGS</div><h2>設定</h2>
       <div class="detail" id="setupBanner" style="display:none;margin-bottom:12px"><strong class="yellow">初回セットアップ中</strong><br/>実際の金額を入力して「設定を保存」を押してください。初回保存は開始時点の基準値として扱います。</div>
-      <details class="form-section" open><summary>生活・毎月の予算</summary><div class="form-section-body"><div class="callout" style="margin-bottom:12px"><strong class="yellow">分類変更後の予算確認</strong><br>v18.39以前から移行・復元した場合、従来の「食費月予算」は「生活費月予算」へ、「自由費月予算」は対象カテゴリが広がった状態で引き継がれます。生活費は食料品・日用品・交通、自由費は外食・コンビニ・趣味・「嗜好品・買い物」・交際費です。両方の予算額を実際の月額に合わせて確認してください。</div><div class="grid2"><div><div class="field"><label>現在残高（現金・普通預金など今すぐ使える額）</label><input id="balance" min="0" step="1000" type="number" value="120000"/><div class="footer" style="margin-top:5px">購入判定では、この残高から予備費を除いた金額も確認します。現在月の現金支出・実返済は自動で残高に反映されます。</div></div><div class="field"><label>基本の手取り月収</label><input id="income" min="0" step="1000" type="number" value="280000"/></div><div class="field"><label>家賃</label><input id="rent" min="0" step="1000" type="number" value="80000"/></div><div class="field"><label>水道光熱費</label><input id="utility" min="0" step="1000" type="number" value="15000"/></div><div class="field"><label>通信費</label><input id="phone" min="0" step="1000" type="number" value="12000"/></div><div class="field"><label>その他固定費</label><input id="fixed" min="0" step="1000" type="number" value="33000"/></div><div class="field"><label>生活費月予算</label><input id="foodBudget" min="0" step="1000" type="number" value="50000"/></div><div class="field"><label>自由費月予算</label><input id="funBudget" min="0" step="1000" type="number" value="30000"/></div></div><div class="callout"><strong>ここで決めるもの</strong><br>現在残高、月収、固定費、生活費・自由費の月予算です。生活費は食料品・日用品・交通、自由費は外食・コンビニ・趣味・「嗜好品・買い物」・交際費を対象にします。</div></div></div></details>
+      <details class="form-section" open><summary>生活・毎月の予算</summary><div class="form-section-body"><div class="grid2"><div><div class="field"><label>現在残高（現金・普通預金など今すぐ使える額）</label><input id="balance" min="0" step="1000" type="number" value="120000"/><div class="footer" style="margin-top:5px">購入判定では、この残高から予備費を除いた金額も確認します。現在月の現金支出・実返済は自動で残高に反映されます。</div></div><div class="field"><label>基本の手取り月収</label><input id="income" min="0" step="1000" type="number" value="280000"/></div><div class="field"><label>家賃</label><input id="rent" min="0" step="1000" type="number" value="80000"/></div><div class="field"><label>水道光熱費</label><input id="utility" min="0" step="1000" type="number" value="15000"/></div><div class="field"><label>通信費</label><input id="phone" min="0" step="1000" type="number" value="12000"/></div><div class="field"><label>その他固定費</label><input id="fixed" min="0" step="1000" type="number" value="33000"/></div><div class="field"><label>生活費月予算</label><input id="foodBudget" min="0" step="1000" type="number" value="50000"/><div class="footer" style="margin-top:5px">食料品・日用品・交通の合計予算です。月初から確保し、予算内の支出は残り生活費から実支出へ振り替えて管理します。</div></div><div class="field"><label>自由費月予算</label><input id="funBudget" min="0" step="1000" type="number" value="30000"/><div class="footer" style="margin-top:5px">外食・コンビニ（嗜好・ついで買い）・趣味・「嗜好品・買い物」・交際費の合計予算です。</div></div></div><div class="callout"><strong>予算の分類</strong><br>生活費＝食料品・日用品・交通。自由費＝外食・コンビニ（嗜好・ついで買い）・趣味・「嗜好品・買い物」・交際費。「その他」はどちらの月予算にも含めず、実支出として安全余力へ直接反映します。</div></div></div></details>
       <details class="form-section" open><summary>借金・滞納</summary><div class="form-section-body"><div class="field"><label>その他借金残高（カード以外）</label><input id="otherDebt" min="0" step="1000" type="number" value="0"/></div><div class="field"><label>その他借金の毎月返済</label><input id="repay" min="0" step="1000" type="number" value="0"/></div><div class="field"><label>家賃などの滞納額</label><input id="arrears" min="0" step="1000" type="number" value="120000"/></div><div class="field">
 <label>その他借金・滞納額の更新理由</label>
 <select id="debtCorrectionMode">
@@ -440,7 +446,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visi
             カード残高・家賃滞納・その他借金を入力したあと、「現在の総借金をBOSS開始HPとして設定」を押してください。
           </div>
 </div></div></details>
-      <details class="form-section" open><summary>使いすぎ防止</summary><div class="form-section-body"><div class="field"><label>最低残す予備費</label><input id="reserve" min="0" step="1000" type="number" value="50000"/></div><div class="field"><label>1日の使いすぎ防止上限</label><input id="dailyLimit" min="0" step="100" type="number" value="2000"/><div class="footer" style="margin-top:5px">外食・コンビニ・趣味・「嗜好品・買い物」の当日合計に適用します。交際費は月間の自由費には含めますが、1日の使いすぎ防止上限には含めません。</div></div><div class="field"><label>外食警戒ライン（月額）</label><input id="diningBudget" min="0" step="1000" type="number" value="20000"/><div class="footer" style="margin-top:5px">自由費とは別に確保する予算ではありません。浪費スコアで「外食が多すぎないか」を見るための警戒基準です。</div></div></div></details>
+      <details class="form-section" open><summary>使いすぎ防止</summary><div class="form-section-body"><div class="field"><label>最低残す予備費</label><input id="reserve" min="0" step="1000" type="number" value="50000"/><div class="footer" style="margin-top:5px">生活費・自由費とは別に、使わず残しておく金額です。現在残高から「使える現金余力」を計算するときにも確保します。</div></div><div class="field"><label>1日の使いすぎ防止上限</label><input id="dailyLimit" min="0" step="100" type="number" value="2000"/><div class="footer" style="margin-top:5px">外食・コンビニ・趣味・「嗜好品・買い物」の当日合計に対するブレーキです。生活費（食料品・日用品・交通）と交際費は、この日次上限の対象外です。</div></div><div class="field"><label>外食警戒ライン（月額）</label><input id="diningBudget" min="0" step="1000" type="number" value="20000"/><div class="footer" style="margin-top:5px">自由費とは別の予算ではありません。外食額がこのラインを超えると、超過度に応じて浪費スコアへ最大25点を加算します。0円にすると外食超過による加点をOFFにします。</div></div></div></details>
       <button id="saveSettingsBtn" class="secondary settings-save">設定を保存</button>
     </div>
     <details class="card ui-details"><summary>アプリ・アップデート</summary><div class="details-body">
@@ -461,6 +467,8 @@ button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visi
     <div class="footer">※節約はPOTENTIAL DAMAGE、実返済でのみBOSS HPが減ります。BOSS DAMAGEは純減少です。返済シミュレーションは登録したカード年利を月次概算で反映します。実際の返済額・期日は契約先の明細を優先してください。</div>
   </section>
 </div>
+
+<button type="button" id="quickExpenseFab" class="quick-expense-fab" aria-label="支出をすぐ記録" title="支出をすぐ記録">＋</button>
 
 <nav class="nav">
   <button class="active" data-page="home"><span class="ico">⌂</span>ホーム</button>
@@ -483,7 +491,7 @@ const FRESH_SETTINGS={
   foodBudget:0,funBudget:0,otherDebt:0,repay:0,arrears:0,arrearsPay:0,
   reserve:0,dailyLimit:0,diningBudget:0,strictMode:true
 };
-const APP_VERSION="18.45";
+const APP_VERSION="18.47";
 const SCHEMA_VERSION=23;
 const appVersionBadge=document.getElementById("appVersionBadge");
 if(appVersionBadge)appVersionBadge.textContent=`v${APP_VERSION}`;
@@ -2613,12 +2621,13 @@ function wasteScore(k=selectedMonth,extra=null){
   const plan=monthPlan(k);
   const freeBudget=Math.max(0,Number(plan.funBudget||0));
   const freeUseRatio=freeBudget>0?Math.min(1,luxury/freeBudget):(luxury>0?1:0);
-  const budget=Math.max(1,Number(plan.diningBudget||0));
+  const diningBudget=Math.max(0,Number(plan.diningBudget||0));
   const diningSpend=spentBy(["外食"],k)+(extraCategory==="外食"?extraAmount:0);
-  const over=Math.max(0,diningSpend-budget);
+  const over=diningBudget>0?Math.max(0,diningSpend-diningBudget):0;
+  const diningPenalty=diningBudget>0?Math.min(1,over/diningBudget)*25:0;
   // current/pastで同じ月のスコアが変わらないよう、その月に一度でも借金があったかを月次スナップショットで判定する。
   const hadDebt=!!plan.hadDebt;
-  return Math.min(100,Math.max(0,Math.round(freeUseRatio*65+over/budget*25+(hadDebt?10:0))));
+  return Math.min(100,Math.max(0,Math.round(freeUseRatio*65+diningPenalty+(hadDebt?10:0))));
 }
 function projectedWasteScoreAfterSpend(amount,category,k=currentMonthKey()){
   return wasteScore(k,{amount,category});
@@ -2861,6 +2870,22 @@ function goToAction(page,targetId){
   },180);
 }
 window.goToAction=goToAction;
+function openQuickExpenseInput(){
+  setLedgerMode("input");
+  go("ledger");
+  window.setTimeout(()=>{
+    const amount=document.getElementById("expenseAmount");
+    if(!amount)return;
+    const card=amount.closest(".quick-expense-card")||amount;
+    card.scrollIntoView({behavior:"smooth",block:"start"});
+    window.setTimeout(()=>{
+      try{amount.focus({preventScroll:true})}catch(_){amount.focus()}
+    },320);
+  },180);
+}
+window.openQuickExpenseInput=openQuickExpenseInput;
+const quickExpenseFab=document.getElementById("quickExpenseFab");
+if(quickExpenseFab)quickExpenseFab.onclick=openQuickExpenseInput;
 document.querySelectorAll(".nav button").forEach(b=>b.onclick=()=>go(b.dataset.page));
 
 function commit({
@@ -4107,11 +4132,11 @@ function renderLedgerAnalysis(){
   renderAnalysisBudget("analysisFoodBudget","生活費予算",bd.food,bd.plan.foodBudget);renderAnalysisBudget("analysisFunBudget","自由費予算",bd.fun,bd.plan.funBudget);
   const luxuryCats=["外食","コンビニ","趣味","買い物","交際費"],luxury=arr.filter(e=>luxuryCats.includes(e.category)).reduce((s,e)=>s+Math.max(0,Number(e.amount||0)),0),prevK=shiftMonth(k,-1),prevArr=monthExpenses(prevK),prevLuxury=prevArr.filter(e=>luxuryCats.includes(e.category)).reduce((s,e)=>s+Math.max(0,Number(e.amount||0)),0),diff=luxury-prevLuxury;
   const luxuryBreakdown=luxuryCats.map(category=>({label:categoryDisplayLabel(category),value:arr.filter(e=>e.category===category).reduce((s,e)=>s+Math.max(0,Number(e.amount||0)),0)})).filter(x=>x.value>0).sort((a,b)=>b.value-a.value);
-  const top=luxuryBreakdown[0],prevComparable=prevArr.length>0&&!isPartialHistoricalMonth(prevK),dining=Math.max(0,arr.filter(e=>e.category==="外食").reduce((s,e)=>s+Math.max(0,Number(e.amount||0)),0)-Math.max(0,Number(bd.plan.diningBudget||0)));
+  const top=luxuryBreakdown[0],prevComparable=prevArr.length>0&&!isPartialHistoricalMonth(prevK),diningBudget=Math.max(0,Number(bd.plan.diningBudget||0)),dining=diningBudget>0?Math.max(0,arr.filter(e=>e.category==="外食").reduce((s,e)=>s+Math.max(0,Number(e.amount||0)),0)-diningBudget):0;
   setMetric("analysisLuxuryTotal",yen(luxury),luxury>0?"yellow":"green");
   setMetric("analysisLuxuryDiff",prevComparable?`${diff>0?"+":""}${yen(diff)}`:"—",prevComparable?(diff>0?"red":diff<0?"green":""):"");
   setMetric("analysisTopCategory",top?top.label:"—");
-  setMetric("analysisDiningOver",partial?"—":yen(dining),partial?"yellow":dining>0?"red":"green");
+  setMetric("analysisDiningOver",partial||diningBudget<=0?"—":yen(dining),partial?"yellow":diningBudget<=0?"":dining>0?"red":"green");
   renderAnalysisFilteredHistory();drawAnalysisDailyChart();drawAnalysisTrendChart();
 }
 
@@ -4580,7 +4605,7 @@ setInterval(()=>{if(currentMonthKey()!==runtimeMonth||todayISO()!==runtimeDay)re
 window.addEventListener("focus",()=>{if(currentMonthKey()!==runtimeMonth||todayISO()!==runtimeDay)refresh()});
 document.addEventListener("visibilitychange",()=>{if(!document.hidden&&(currentMonthKey()!==runtimeMonth||todayISO()!==runtimeDay))refresh()});
 
-// ===== PWA / controlled update layer (v18.45) =====
+// ===== PWA / controlled update layer (v18.46) =====
 let deferredPwaInstallPrompt=null;
 let pwaRegistration=null;
 let pwaReloading=false;
