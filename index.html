@@ -190,6 +190,12 @@ body.mode-debt #home .hero-card{border-color:#5c3d47;background:linear-gradient(
 .home-detail-hub>summary{font-size:14px;font-weight:900}.home-detail-hub>.details-body{padding-top:4px}.home-detail-intro{margin:0 0 5px;padding:10px 11px;border:1px solid #303e47;border-radius:11px;background:#0d151a;color:#9eabb5;font-size:10px;line-height:1.6}.home-detail-section{padding-top:4px}.home-detail-section+.home-detail-section{margin-top:8px;padding-top:10px;border-top:1px solid rgba(112,133,145,.14)}.home-detail-hub .section-divider{margin:8px 2px 9px}.home-detail-hub .boss-mini,.home-detail-hub .build-mini{margin-top:0}.home-spendable-help{margin-top:14px}.home-spendable-help .details-body{padding-top:0}
 @media(max-width:620px){.home-detail-hub>.details-body{padding:12px}.home-detail-intro{font-size:9px}.home-hero-note{font-size:9px}}
 
+/* ===== v18.71 TIMING-AWARE GUIDED UX audit fixes; calculation formulas unchanged ===== */
+.home-mode-next{display:flex;flex-direction:column;align-items:stretch;gap:4px}.home-mode-next .guided-next-title{font-size:12px;font-weight:900;color:#eef4f7}.home-mode-next .guided-next-detail{font-size:9px;color:#93a1ab;line-height:1.45}.home-mode-next .guided-next-btn{width:100%;min-height:34px;margin-top:4px;padding:7px 9px;border-radius:9px;font-size:10px;background:var(--mode-soft,rgba(125,211,252,.1));border:1px solid var(--mode-border,#40515c);color:#eef4f7}
+.guided-card{border-color:#35505d;background:linear-gradient(145deg,rgba(14,25,31,.98),rgba(13,20,25,.98))}.guided-head{display:flex;justify-content:space-between;align-items:flex-end;gap:12px}.guided-head h2{margin-bottom:0}.guided-progress-copy{font-size:10px;font-weight:900;color:#a9b6bf}.guided-progress{height:7px;margin:10px 0 12px;border-radius:999px;background:#111b21;overflow:hidden;border:1px solid #293a44}.guided-progress>div{height:100%;width:0;background:linear-gradient(90deg,#6bb7d9,#79d8b4);transition:width .2s ease}.guided-list{display:grid;gap:7px}.guided-row{display:grid;grid-template-columns:24px minmax(0,1fr) auto;gap:9px;align-items:center;padding:9px 10px;border:1px solid #2d3d47;border-radius:11px;background:#0e171c}.guided-row.done{opacity:.72}.guided-state{width:22px;height:22px;border-radius:999px;display:grid;place-items:center;border:1px solid #40525e;font-size:11px;font-weight:950;color:#a8b7c0}.guided-row.done .guided-state{border-color:#39745e;color:#79d8b4;background:rgba(121,216,180,.08)}.guided-row.pending .guided-state{border-color:#786438;color:#f4c96a;background:rgba(244,201,106,.07)}.guided-row.future{opacity:.82}.guided-row.future .guided-state{border-color:#3c5969;color:#8ec5df;background:rgba(125,211,252,.06)}.guided-copy strong{display:block;font-size:11px;color:#e8eff3}.guided-copy small{display:block;margin-top:2px;color:#82919b;font-size:9px;line-height:1.45}.guided-row button{width:auto;min-width:76px;min-height:32px;padding:6px 9px;font-size:9px}.guided-empty{padding:10px 11px;border:1px solid #315b4c;border-radius:11px;background:rgba(121,216,180,.06);color:#a9c9bc;font-size:10px;line-height:1.55}.guided-done-wrap{margin-top:9px;border:1px solid #2c3b44;border-radius:11px;background:#0c1419;overflow:hidden}.guided-done-wrap>summary{cursor:pointer;list-style:none;padding:9px 10px;font-size:10px;font-weight:850;color:#93a2ac}.guided-done-wrap>summary::-webkit-details-marker{display:none}.guided-done-wrap>summary::before{content:"＋";display:inline-block;width:16px;color:#7d8d97}.guided-done-wrap[open]>summary::before{content:"－"}.guided-done-wrap .guided-list{padding:0 8px 8px}.guided-note{margin-top:8px;font-size:9px;line-height:1.5;color:#74848f}
+.bulk-save-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin:9px 0}.bulk-save-field{display:grid;grid-template-columns:minmax(0,1fr) 112px;gap:8px;align-items:center;padding:8px 9px;border:1px solid #2d3c45;border-radius:10px;background:#0d151a}.bulk-save-field label{font-size:10px;font-weight:850;color:#cbd6dc}.bulk-save-field input{margin:0;text-align:right}.bulk-save-summary{margin-top:9px;padding:9px 10px;border-radius:10px;background:#101a20;border:1px solid #2e414c;font-size:10px;color:#9facb5;line-height:1.55}.potential-transfer-card{border-color:#355060;background:linear-gradient(145deg,rgba(16,28,35,.98),rgba(14,21,27,.98))}.potential-transfer-card .grid3{margin:9px 0}.potential-transfer-card .metric .v{font-size:18px}.potential-transfer-action{display:grid;grid-template-columns:minmax(0,1fr) minmax(180px,.9fr);gap:9px;align-items:end}.potential-transfer-action button{min-height:43px}.potential-transfer-help{margin-top:8px;font-size:10px;line-height:1.6;color:#91a2ac}.source-save-detail{margin-top:7px;border:1px solid #2c3d47;border-radius:8px;background:#0b1419;padding:0 8px}.source-save-detail summary{cursor:pointer;padding:7px 0;font-size:10px;font-weight:850;color:#a9bbc5}.source-save-detail-body{padding:0 0 7px}.source-save-detail-row{display:flex;justify-content:space-between;gap:12px;padding:4px 0;border-top:1px solid #24333b;font-size:9px;color:#91a2ac}.source-save-detail-row:first-child{border-top:0}.source-save-detail-row strong{color:#c8d3d9;font-size:9px}.salary-guide-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}.salary-guide-status{margin:8px 0 10px;padding:9px 10px;border:1px solid #30424c;border-radius:10px;background:#0d151a;font-size:10px;line-height:1.55;color:#9caab3}
+@media(max-width:620px){.guided-row{grid-template-columns:24px minmax(0,1fr)}.guided-row button{grid-column:2;width:100%}.bulk-save-grid{grid-template-columns:1fr}.potential-transfer-action{grid-template-columns:1fr}.salary-guide-actions{grid-template-columns:1fr}.bulk-save-field{grid-template-columns:minmax(0,1fr) 105px}}
+
 /* ===== v18.62 SETTINGS + POTENTIAL INPUT UX / presentation only ===== */
 .save-memo-presets{display:flex;flex-wrap:wrap;gap:7px;margin:7px 0 9px}.save-memo-presets button{width:auto;min-height:34px;padding:7px 10px;font-size:11px;border-radius:999px;background:#18232b;color:#dce7ed;border:1px solid #354853}.save-memo-presets button:hover,.save-memo-presets button:focus{border-color:#5e8395;background:#1c2c35}.save-memo-input-wrap{background:#0d151a;border:1px solid #293943;border-radius:13px;padding:11px 11px 2px}.save-memo-input-wrap .field{margin-bottom:8px}.save-memo-help{font-size:10px;color:#84939e;line-height:1.55;margin:0 2px 8px}.settings-intro{padding:12px 13px;margin-bottom:12px;border:1px solid #30414b;border-radius:13px;background:#0d151a;font-size:11px;line-height:1.65;color:#aebac3}.settings-intro strong{color:#edf3f6}.settings-map{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin-bottom:13px}.settings-map-item{padding:9px 8px;border:1px solid #303e47;border-radius:11px;background:#10181e;text-align:center}.settings-map-item strong{display:block;font-size:10px;color:#dce5ea}.settings-map-item small{display:block;margin-top:2px;font-size:8px;line-height:1.35;color:#7f8e98}.form-section>summary .settings-summary-copy{display:block;margin-top:2px;color:#7f8e98;font-size:9px;font-weight:700;line-height:1.45}.form-section>summary .settings-summary-main{display:block}.settings-mode-note{font-size:10px;color:#8fa0aa;line-height:1.55;margin:0 1px 10px}.settings-save{position:sticky;bottom:82px;z-index:5;box-shadow:0 10px 28px rgba(0,0,0,.4)}
 @media(max-width:620px){.settings-map{grid-template-columns:1fr 1fr}.settings-map-item{padding:8px 7px}.settings-save{bottom:78px}.save-memo-presets{gap:6px}.save-memo-presets button{font-size:10px;padding:7px 9px}}
@@ -200,7 +206,9 @@ body.mode-debt #home .hero-card{border-color:#5c3d47;background:linear-gradient(
 
 
 /* ===== v18.64 CARD / HANDOFF UX ===== */
-.card-manager-card{border-color:#365361;background:linear-gradient(145deg,rgba(15,27,34,.98),rgba(15,22,28,.98))}.card-manager-intro{font-size:11px;line-height:1.65;color:#aebbc4;margin-bottom:11px}.card-manager-intro strong{color:#edf7fb}.payment-card-list{display:grid;gap:8px;margin:10px 0 12px}.payment-card-row{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 11px;border:1px solid #30424c;border-radius:12px;background:#0d151a}.payment-card-row-main{min-width:0}.payment-card-row-main strong{display:block;font-size:12px;color:#edf5f8;overflow-wrap:anywhere}.payment-card-row-main small{display:block;margin-top:3px;font-size:9px;line-height:1.5;color:#84939e}.payment-card-row-actions{display:flex;gap:6px;flex:none}.payment-card-row-actions button{width:auto;min-height:32px;padding:6px 9px;font-size:9px}.payment-card-empty{padding:11px;border:1px dashed #34454f;border-radius:11px;color:#84939e;font-size:10px;line-height:1.55}.card-add-grid{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(120px,.8fr);gap:9px}.expense-card-add{margin-top:8px}.expense-card-add-toggle{width:auto;padding:8px 11px;min-height:36px;font-size:10px}.expense-card-add-panel{display:none;margin-top:8px;padding:10px;border:1px solid #314550;border-radius:12px;background:#0d151a}.expense-card-add-panel.open{display:block}.expense-card-add-actions{display:grid;grid-template-columns:1fr auto;gap:7px;align-items:end}.expense-card-add-actions button{min-height:42px}.handoff-btn{margin-top:9px}.linked-save-note{margin-top:8px;padding:8px 10px;border:1px solid #315e52;border-radius:10px;background:rgba(52,211,153,.055);font-size:10px;line-height:1.55;color:#b9cdc5}.settings-map{grid-template-columns:repeat(5,1fr)}
+.card-manager-card{border-color:#365361;background:linear-gradient(145deg,rgba(15,27,34,.98),rgba(15,22,28,.98))}.card-manager-intro{font-size:11px;line-height:1.65;color:#aebbc4;margin-bottom:11px}.card-manager-intro strong{color:#edf7fb}.payment-card-list{display:grid;gap:8px;margin:10px 0 12px}.payment-card-row{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 11px;border:1px solid #30424c;border-radius:12px;background:#0d151a}.payment-card-row-main{min-width:0}.payment-card-row-main strong{display:block;font-size:12px;color:#edf5f8;overflow-wrap:anywhere}.payment-card-row-main small{display:block;margin-top:3px;font-size:9px;line-height:1.5;color:#84939e}.payment-card-row-actions{display:flex;gap:6px;flex:none}.payment-card-row-actions button{width:auto;min-height:32px;padding:6px 9px;font-size:9px}.payment-card-empty{padding:11px;border:1px dashed #34454f;border-radius:11px;color:#84939e;font-size:10px;line-height:1.55}.card-add-grid{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(120px,.8fr);gap:9px}.expense-card-add{margin-top:8px}.expense-card-add-toggle{width:auto;padding:8px 11px;min-height:36px;font-size:10px}.expense-card-add-panel{display:none;margin-top:8px;padding:10px;border:1px solid #314550;border-radius:12px;background:#0d151a}.expense-card-add-panel.open{display:block}.expense-card-add-actions{display:grid;grid-template-columns:1fr auto;gap:7px;align-items:end}.expense-card-add-actions button{min-height:42px}.handoff-btn{margin-top:9px}.linked-save-note{margin-top:8px;padding:8px 10px;border:1px solid #315e52;border-radius:10px;background:rgba(52,211,153,.055);font-size:10px;line-height:1.55;color:#b9cdc5}.settings-map{grid-template-columns:repeat(6,1fr)}
+.guide-timing-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.guide-timing-grid .field{margin:0}.guide-timing-help{margin:2px 0 10px;padding:9px 10px;border:1px solid #31505f;border-radius:10px;background:rgba(125,211,252,.045);font-size:10px;line-height:1.6;color:#9fb0ba}.guide-timing-help strong{color:#dcebf2}.card-guide-day{color:#9ec6d9;font-weight:850}
+@media(max-width:620px){.guide-timing-grid{grid-template-columns:1fr}}
 @media(max-width:620px){.settings-map{grid-template-columns:repeat(2,1fr)}.card-add-grid{grid-template-columns:1fr}.payment-card-row{align-items:flex-start;flex-direction:column}.payment-card-row-actions{width:100%}.payment-card-row-actions button{flex:1}.expense-card-add-actions{grid-template-columns:1fr}.expense-card-add-actions button{width:100%}}
 
 </style>
@@ -274,6 +282,14 @@ body.mode-debt #home .hero-card{border-color:#5c3d47;background:linear-gradient(
         <button type="button" class="secondary home-action-btn" onclick="goToAction('ledger','balanceAdjustBtn')">現在残高を調整</button>
       </div></div></details>
       <div class="footer" style="margin-top:9px">普段は「支出・節約・返済/貯蓄」の3つだけで運用できます。</div>
+    </div>
+
+    <div class="card guided-card" id="monthlyGuideCard">
+      <div class="guided-head"><div><div class="kicker">MONTHLY CHECK</div><h2>今月の確認</h2></div><div class="guided-progress-copy" id="monthlyGuideProgressCopy">-</div></div>
+      <div class="guided-progress" aria-hidden="true"><div id="monthlyGuideProgressBar"></div></div>
+      <div class="guided-list" id="monthlyGuideList"><div class="footer">今月の入力状況を確認しています。</div></div>
+      <details class="guided-done-wrap" id="monthlyGuideDoneDetails" hidden><summary id="monthlyGuideDoneSummary">完了済みを表示</summary><div class="guided-list" id="monthlyGuideDoneList"></div></details>
+      <div class="footer" style="margin-top:9px">NEXT ACTIONには未完了の最優先1件を表示し、ここには残りの未完了だけを表示します。完了済みは折りたたんで確認できます。</div>
     </div>
 
     <details class="card ui-details home-detail-hub">
@@ -396,8 +412,10 @@ body.mode-debt #home .hero-card{border-color:#5c3d47;background:linear-gradient(
 <div class="field"><label>支払額</label><input id="fixedPayAmount" min="0" placeholder="支払額を入力" step="1000" type="number"/></div>
 </div>
 <div class="grid2"><div class="field"><label>支払日</label><input id="fixedPayDate" type="date"/></div><div class="field"><label>メモ</label><input id="fixedPayMemo" placeholder="例：9月家賃" type="text"/></div></div>
-<button id="fixedPayBtn">固定費を支払済みにする</button>
-<div class="footer" style="margin-top:8px"><strong>※上部で過去月を表示していても、この操作は現在月へ記録します。</strong><br>月次家計では固定費をすでに確保しているため、ここでは二重計上せず「現在残高だけ」を減らします。</div>
+<label class="toggle" style="margin:2px 0 8px"><input id="fixedPayCompleteMonth" type="checkbox" checked/> この支払いで今月分は完了</label>
+<div class="detail" id="fixedPayStatus" style="margin:0 0 10px">設定目安と今月の支払状況を確認して登録します。</div>
+<button id="fixedPayBtn">固定費の支払いを記録</button>
+<div class="footer" style="margin-top:8px"><strong>※上部で過去月を表示していても、この操作は現在月へ記録します。</strong><br>設定額は「目安」です。「今月分は完了」をONにすると、実際の請求額が設定額より安くても、その実績額を今月の固定費として採用します。部分払いならOFFのまま記録してください。</div>
 <div class="log" id="fixedPaymentHistory" style="margin-top:10px"></div></div></details>
     <details class="card ui-details" id="cardSettlementSection"><summary>一括払いカードの請求を支払った</summary><div class="details-body"><div class="grid2">
 <div class="field"><label>カード</label><select id="cardSettlementTarget"></select></div>
@@ -407,10 +425,20 @@ body.mode-debt #home .hero-card{border-color:#5c3d47;background:linear-gradient(
 <button id="cardSettlementBtn">カード請求を支払済みにする</button>
 <div class="footer" style="margin-top:8px"><strong>一括払い予定は買い物時点ですでに家計支出へ計上済みです。</strong><br>ここでは二重に支出計上せず、一括支払予定額と現在残高だけを同額減らします。BUILD / DEBTどちらのモードでも利用できます。</div>
 <div class="log" id="cardSettlementHistory" style="margin-top:10px"></div></div></details>
-    <details class="card ui-details"><summary>現在残高を調整（今日の残高）</summary><div class="details-body"><div class="grid2"><div class="field"><label>増減額（入金は＋、訂正減額は－）</label><input id="balanceAdjustAmount" placeholder="例：50000 / -3000" step="1000" type="number"/></div><div class="field"><label>内容</label><input id="balanceAdjustMemo" placeholder="例：給与入金、残高訂正" type="text"/></div></div>
+    <details class="card ui-details"><summary>現在残高を調整（今日の残高）</summary><div class="details-body"><div class="grid2"><div class="field"><label>増減額（入金は＋、訂正減額は－）</label><input id="balanceAdjustAmount" placeholder="例：50000 / -3000" step="1000" type="number"/></div><div class="field"><label>内容</label><input id="balanceAdjustMemo" placeholder="例：返金、残高訂正" type="text"/></div></div>
 <button class="secondary" id="balanceAdjustBtn">残高を調整</button>
-<div class="footer" style="margin-top:8px"><strong>※上部の選択月に関係なく、今日時点の現在残高を調整します。</strong><br>月収の保存だけでは現在残高を自動加算しません。実際に入金された時にここで残高を調整してください。</div>
+<div class="footer" style="margin-top:8px"><strong>※上部の選択月に関係なく、今日時点の現在残高を調整します。</strong><br>返金や入力訂正など、給与以外の残高調整に使用します。給与・収入の入金は下の専用欄を使うと、今月の確認にも反映されます。</div>
 <div class="log" id="cashLedger" style="margin-top:10px"></div></div></details>
+
+    <details class="card ui-details" id="salaryDepositSection"><summary>給与・収入の入金を現在残高へ反映</summary><div class="details-body">
+      <div class="footer" style="margin-bottom:9px"><strong>「この月の収入」の保存とは別操作です。</strong><br>実際に口座へ入金され、まだ現在残高へ反映していない場合だけ加算してください。すでに現在残高へ手動反映済みなら、下の「反映済みとして確認」を使うと二重加算を防げます。</div>
+      <div class="salary-guide-status" id="salaryDepositStatus">今月の給与入金状況を確認しています。</div>
+      <div class="grid2"><div class="field"><label>入金額</label><input id="salaryDepositAmount" inputmode="numeric" min="0" step="1000" placeholder="0" type="number"/></div><div class="field"><label>入金日</label><input id="salaryDepositDate" type="date"/></div></div>
+      <div class="field"><label>メモ（任意）</label><input id="salaryDepositMemo" placeholder="例：9月給与" type="text"/></div>
+      <div class="salary-guide-actions"><button type="button" id="salaryDepositBtn">給与・収入の入金を現在残高へ加算</button><button type="button" class="secondary" id="salaryDepositConfirmBtn">すでに反映済みとして確認</button></div>
+      <div class="guided-note">入力を間違えた場合は、下の履歴から取消してください。入金の取消は現在残高も同額戻します。</div>
+      <div class="log" id="salaryDepositHistory" style="margin-top:10px"></div>
+    </div></details>
     <div class="card"><h2>選択月の家計内訳</h2><div class="grid4">
 <div class="metric"><div class="k">実支出</div><div class="v" id="ledgerActual">-</div></div>
 <div class="metric"><div class="k">未使用の確保額</div><div class="v" id="ledgerReserved">-</div></div>
@@ -509,7 +537,30 @@ body.mode-debt #home .hero-card{border-color:#5c3d47;background:linear-gradient(
 <div class="field quick-amount-field"><label for="saveAmount">いくら使わずに済んだ？</label><div class="quick-amount-wrap"><span>¥</span><input id="saveAmount" inputmode="numeric" min="0" placeholder="0" step="100" type="number"/></div></div>
 <div class="field"><label>カテゴリ</label><select id="saveCategory"><option>外食</option><option value="コンビニ">コンビニ（嗜好・ついで買い）</option><option>趣味</option><option value="買い物">嗜好品・買い物</option><option>交際費</option><option>その他</option></select></div>
 <div class="save-memo-input-wrap"><div class="field"><label>何を我慢した？</label><div id="saveMemoPresets" class="save-memo-presets" aria-label="よくある節約内容"></div><input id="saveMemo" placeholder="候補をタップ、または自由入力" type="text"/></div><div class="save-memo-help">候補はカテゴリに合わせて変わります。入力しなくても節約記録は保存できます。</div></div>
-<button id="saveActionBtn">節約として記録</button><div class="footer" id="potentialSaveModeNote" style="margin-top:8px">節約は表示中の月に関係なく、今日の日付で記録します。POTENTIAL DAMAGEは実返済とは別です。</div><div class="big" id="saveResult"><div class="status">節約を記録</div><div class="reason">我慢できた金額をPOTENTIALとして記録します。実際の返済・貯蓄とは別管理です。</div></div></div>
+<button id="saveActionBtn">節約として記録</button><div class="footer" id="potentialSaveModeNote" style="margin-top:8px">節約は表示中の月に関係なく、今日の日付で記録します。POTENTIAL DAMAGEは実返済とは別です。</div><div class="big" id="saveResult"><div class="status">節約を記録</div><div class="reason">我慢できた金額をPOTENTIALとして記録します。実際の返済・貯蓄とは別管理です。</div></div>
+<details class="inline-details" id="bulkSaveDetails" style="margin-top:10px"><summary>複数の節約をまとめて入力</summary><div class="details-body">
+  <div class="footer">入力したカテゴリだけ、今日の日付の<strong>個別の節約記録</strong>としてまとめて保存します。実返済・実貯蓄には自動反映しません。</div>
+  <div class="bulk-save-grid">
+    <div class="bulk-save-field"><label>外食</label><input class="bulk-save-amount" data-category="外食" min="0" step="100" inputmode="numeric" type="number" placeholder="0"/></div>
+    <div class="bulk-save-field"><label>コンビニ</label><input class="bulk-save-amount" data-category="コンビニ" min="0" step="100" inputmode="numeric" type="number" placeholder="0"/></div>
+    <div class="bulk-save-field"><label>趣味</label><input class="bulk-save-amount" data-category="趣味" min="0" step="100" inputmode="numeric" type="number" placeholder="0"/></div>
+    <div class="bulk-save-field"><label>買い物</label><input class="bulk-save-amount" data-category="買い物" min="0" step="100" inputmode="numeric" type="number" placeholder="0"/></div>
+    <div class="bulk-save-field"><label>交際費</label><input class="bulk-save-amount" data-category="交際費" min="0" step="100" inputmode="numeric" type="number" placeholder="0"/></div>
+    <div class="bulk-save-field"><label>その他</label><input class="bulk-save-amount" data-category="その他" min="0" step="100" inputmode="numeric" type="number" placeholder="0"/></div>
+  </div>
+  <button type="button" class="secondary" id="bulkSaveBtn">入力した節約をまとめて記録</button>
+  <div class="bulk-save-summary" id="bulkSaveSummary">金額を入力すると合計を表示します。</div>
+</div></details></div>
+    <div class="card compact-card potential-transfer-card" id="potentialTransferCard">
+      <div class="kicker">UNALLOCATED POTENTIAL</div><h2>節約をまとめて反映</h2>
+      <div class="grid3">
+        <div class="metric"><div class="k">節約合計</div><div class="v" id="bulkPotentialTotal">-</div></div>
+        <div class="metric"><div class="k">反映済み</div><div class="v green" id="bulkPotentialApplied">-</div></div>
+        <div class="metric"><div class="k">未振替</div><div class="v yellow" id="bulkPotentialRemaining">-</div></div>
+      </div>
+      <div class="potential-transfer-action"><div class="field" style="margin:0"><label for="bulkPotentialApplyAmount">今回まとめて反映する金額</label><input id="bulkPotentialApplyAmount" min="0" step="100" inputmode="numeric" type="number" placeholder="0"/></div><button type="button" id="bulkPotentialApplyBtn">まとめて返済入力へ</button></div>
+      <div class="potential-transfer-help" id="bulkPotentialApplyNote">表示中の月の未振替節約を、古い記録から順にまとめて紐付けます。実際の返済・貯蓄として確定するまでは残高は変わりません。</div>
+    </div>
     <details class="card ui-details management-details"><summary id="potentialSaveHistorySummary">節約履歴 / 返済候補</summary><div class="details-body"><div class="log" id="saveHistory"></div></div></details>
     </div>
     <div id="buildModePanel" style="display:none">
@@ -706,13 +757,13 @@ body.mode-debt #home .hero-card{border-color:#5c3d47;background:linear-gradient(
         <div class="settings-map-item"><strong>基本</strong><small>残高・月収</small></div>
         <div class="settings-map-item"><strong>毎月</strong><small>固定費・予算</small></div>
         <div class="settings-map-item"><strong>防止</strong><small>予備費・上限</small></div>
-        <div class="settings-map-item"><strong>カード</strong><small>支払方法・未払残高</small></div><div class="settings-map-item"><strong>借金</strong><small>残高・返済条件</small></div>
+        <div class="settings-map-item"><strong>カード</strong><small>支払方法・未払残高</small></div><div class="settings-map-item"><strong>案内</strong><small>給料日・支払日</small></div><div class="settings-map-item"><strong>借金</strong><small>残高・返済条件</small></div>
       </div>
 
       <details class="form-section card-manager-card" open id="settingsCardSection"><summary><span><span class="settings-summary-main">支払方法・カード</span><span class="settings-summary-copy">カードを支出入力で選べるように登録</span></span></summary><div class="form-section-body">
         <div class="card-manager-intro"><strong>毎月一括払いのカードは、通常の買い物でBUILD MODEからDEBT MODEへ戻りません。</strong><br>一括払い予定額は「支払予定」として別管理し、カード会社へ実際に支払うまで現在残高から先に確保します。リボ・分割・繰越などは「借金扱い」で登録してください。</div>
         <div id="paymentCardList" class="payment-card-list"></div>
-        <div class="card-add-grid"><div class="field"><label>カード名</label><input id="paymentCardName" maxlength="60" placeholder="例：楽天カード" type="text"/></div><div class="field"><label>現在の未払残高</label><input id="paymentCardBalance" inputmode="numeric" min="0" step="1000" placeholder="0" type="number"/></div></div>
+        <div class="card-add-grid"><div class="field"><label>カード名</label><input id="paymentCardName" maxlength="60" placeholder="例：楽天カード" type="text"/></div><div class="field"><label>現在の未払残高</label><input id="paymentCardBalance" inputmode="numeric" min="0" step="1000" placeholder="0" type="number"/></div></div><div class="field"><label>毎月の引落日（任意）</label><input id="paymentCardGuideDueDay" inputmode="numeric" min="1" max="31" step="1" placeholder="例：27" type="number"/><div class="footer" style="margin-top:5px">設定すると、翌月以降の一括払い予定を引落日前は「予定前」、引落日以降は「要確認」として案内します。29〜31日は短い月では月末扱いです。</div></div>
         <label class="toggle" style="margin:2px 0 10px"><input id="paymentCardPayInFull" type="checkbox" checked/> 毎月一括払いとして使う</label>
         <div class="footer" style="margin:-3px 0 10px">ONなら、上の未払残高も一括支払予定として登録し、今後このカードで記録する通常支出もBUILD MODEを維持します。OFFなら未払残高・今後のカード利用を借金として扱います。</div>
         <details class="inline-details"><summary>借金扱い時の返済条件（任意）</summary><div class="details-body"><div class="grid2"><div class="field"><label>毎月返済額</label><input id="paymentCardMonthlyPayment" min="0" step="1000" placeholder="0" type="number"/></div><div class="field"><label>年利 %</label><input id="paymentCardApr" min="0" step="0.1" placeholder="0" type="number"/></div></div></div></details>
@@ -737,6 +788,19 @@ body.mode-debt #home .hero-card{border-color:#5c3d47;background:linear-gradient(
           <div class="field"><label>自由費月予算</label><input id="funBudget" min="0" step="1000" type="number" value="30000"/><div class="footer" style="margin-top:5px">外食・コンビニ・趣味・嗜好品・買い物・交際費の合計予算です。</div></div>
         </div>
         <div class="callout"><strong>予算の分類</strong><br>生活費＝食料品・日用品・交通。自由費＝外食・コンビニ（嗜好・ついで買い）・趣味・「嗜好品・買い物」・交際費。「その他」はどちらの月予算にも含めず、実支出として安全余力へ直接反映します。</div>
+      </div></details>
+
+      <details class="form-section" id="settingsGuideTimingSection"><summary><span><span class="settings-summary-main">入力案内の予定日</span><span class="settings-summary-copy">給料日・固定費の支払時期をNEXT ACTIONへ反映</span></span></summary><div class="form-section-body">
+        <div class="guide-timing-help"><strong>予定日前は急かしません。</strong><br>1〜31日で設定すると、その日までは「○ 予定前」、予定日以降に未入力なら「! 要対応」へ変わります。空欄または0なら、従来どおり月初から未入力として案内します。29〜31日は短い月では月末に自動調整します。</div>
+        <div class="guide-timing-grid">
+          <div class="field"><label>主な給与・収入日</label><input id="guideIncomeDay" inputmode="numeric" min="0" max="31" step="1" placeholder="例：25" type="number"/></div>
+          <div class="field"><label>家賃の支払日</label><input id="guideRentDay" inputmode="numeric" min="0" max="31" step="1" placeholder="例：27" type="number"/></div>
+          <div class="field"><label>水道光熱費の支払目安日</label><input id="guideUtilityDay" inputmode="numeric" min="0" max="31" step="1" placeholder="例：20" type="number"/></div>
+          <div class="field"><label>通信費の支払目安日</label><input id="guidePhoneDay" inputmode="numeric" min="0" max="31" step="1" placeholder="例：10" type="number"/></div>
+          <div class="field"><label>その他固定費の支払目安日</label><input id="guideFixedDay" inputmode="numeric" min="0" max="31" step="1" placeholder="例：15" type="number"/></div>
+        </div>
+        <button type="button" class="secondary" id="saveGuideTimingBtn" style="margin-top:10px">入力案内の予定日だけ保存</button>
+        <div class="footer" style="margin-top:8px">下部の「設定を保存」でも予定日は一緒に保存されます。初回設定中は、このボタンで入力内容を保持したあと「設定を保存」で確定できます。クレジットカードの引落日は「支払方法・カード」からカードごとに設定します。予定日は家計計算や返済額には影響せず、案内表示だけに使います。</div>
       </div></details>
 
       <details class="form-section" id="settingsGuardSection"><summary><span><span class="settings-summary-main">使いすぎ防止</span><span class="settings-summary-copy">予備費、1日上限、外食警戒ライン</span></span></summary><div class="form-section-body">
@@ -813,8 +877,8 @@ const FRESH_SETTINGS={
   foodBudget:0,funBudget:0,otherDebt:0,repay:0,arrears:0,arrearsPay:0,
   reserve:0,dailyLimit:0,diningBudget:0,strictMode:true
 };
-const APP_VERSION="18.67";
-const SCHEMA_VERSION=24;
+const APP_VERSION="18.74";
+const SCHEMA_VERSION=26;
 const appVersionBadge=document.getElementById("appVersionBadge");
 if(appVersionBadge)appVersionBadge.textContent=`v${APP_VERSION}`;
 let saveToastTimer=null;
@@ -833,8 +897,10 @@ function showSaveToast(title,detail=""){
 
 let settingsState={...DEFAULTS};
 const DEFAULT_BUILD_STATE={openingSavings:0,goal:0,monthlyTarget:0,openingAllocations:[],emergencyGoalId:"",emergencyMonthlyCost:0};
+const DEFAULT_GUIDE_TIMING_STATE={incomeDay:0,rentDay:0,utilityDay:0,phoneDay:0,fixedDay:0};
 const DEFAULT_DEBT_TRANSITION_STATE={protectionMonth:"",protectionAmount:0,protectionStartedAt:0,previousBossInitialDebt:null,previousBossStartedAt:null,previousBossStartedAtApprox:false,newBossStartedAt:0};
 let buildState={...DEFAULT_BUILD_STATE},buildSavings=[],buildWithdrawals=[],buildGoals=[];
+let guideTimingState={...DEFAULT_GUIDE_TIMING_STATE};
 let debtTransitionState={...DEFAULT_DEBT_TRANSITION_STATE};
 let selectedBuildGoalId="",editingBuildGoalId="";
 let expenses=[],saves=[],accounts=[],payments=[],cardSettlements=[],fixedPayments=[],feeEvents=[],borrowEvents=[],cashLedger=[],monthMeta={},monthSnapshots={},accountMonthState={};
@@ -859,6 +925,8 @@ let freshInstall=false;
 let editingAccountId=null;
 let pendingSaveId=null;
 let pendingBuildSaveId=null;
+let pendingSaveAllocations=[];
+let pendingBuildSaveAllocations=[];
 let loadWarnings=[];
 let correctionAllocationState={};
 let ledgerViewMode="input";
@@ -872,6 +940,40 @@ function normalizeCurrentDebtBalances(){
   settingsState.otherDebt=debtYen(settingsState.otherDebt);
   settingsState.arrears=debtYen(settingsState.arrears);
   for(const a of accounts)a.balance=debtYen(a.balance);
+}
+function normalizeGuideDay(v){
+  const n=Number(v);
+  if(!Number.isFinite(n))return 0;
+  const d=Math.trunc(n);
+  return d>=1&&d<=31?d:0;
+}
+function normalizeGuideTimingState(v){
+  const raw=v&&typeof v==="object"&&!Array.isArray(v)?v:{};
+  return {
+    incomeDay:normalizeGuideDay(raw.incomeDay),
+    rentDay:normalizeGuideDay(raw.rentDay),
+    utilityDay:normalizeGuideDay(raw.utilityDay),
+    phoneDay:normalizeGuideDay(raw.phoneDay),
+    fixedDay:normalizeGuideDay(raw.fixedDay)
+  };
+}
+function guideDateForMonth(day,k=currentMonthKey()){
+  day=normalizeGuideDay(day);if(!day||!validMonthKey(k))return "";
+  const [y,m]=k.split("-").map(Number),last=new Date(y,m,0).getDate(),d=Math.min(day,last);
+  return `${k}-${String(d).padStart(2,"0")}`;
+}
+function guideDayLabel(day,k=currentMonthKey()){
+  day=normalizeGuideDay(day);if(!day)return "予定日未設定";
+  const date=guideDateForMonth(day,k),d=Number(date.slice(-2));
+  return day>=29&&d<day?`${d}日（月末）`:`${d}日`;
+}
+function guideIsBeforeDue(day,k=currentMonthKey(),today=todayISO()){
+  const due=guideDateForMonth(day,k);
+  return !!due&&String(today)<due;
+}
+function guideDueDetail(day,k=currentMonthKey()){
+  const due=guideDateForMonth(day,k);
+  return due?`${monthLabel(k)} ${guideDayLabel(day,k)}予定`:"";
 }
 const uid=()=>Date.now().toString(36)+Math.random().toString(36).slice(2);
 function inferCreatedAtFromId(id,date=""){
@@ -1395,7 +1497,7 @@ function buildStateBundle(){
     calendarMonth:currentMonthKey(),
     settings:settingsState,
     expenses,saves,accounts,payments,cardSettlements,fixedPayments,feeEvents,borrowEvents,cashLedger,
-    buildState,buildSavings,buildWithdrawals,buildGoals,debtTransitionState,
+    buildState,buildSavings,buildWithdrawals,buildGoals,debtTransitionState,guideTimingState,
     monthMeta,monthSnapshots,accountMonthState,correctionAllocationState,selectedMonth:currentMonthKey(),
     bossInitialDebt,bossStartedAt,bossStartedAtApprox
   };
@@ -1426,6 +1528,7 @@ function applyBundleToMemory(b){
   buildSavings=n.buildSavings.map(x=>({...x,goalId:x.goalId&&validBuildGoalIds.has(x.goalId)?x.goalId:""}));
   buildWithdrawals=n.buildWithdrawals.map(x=>({...x,goalId:x.goalId&&validBuildGoalIds.has(x.goalId)?x.goalId:""}));
   debtTransitionState={...n.debtTransitionState};
+  guideTimingState={...n.guideTimingState};
   if(selectedBuildGoalId&&!validBuildGoalIds.has(selectedBuildGoalId))selectedBuildGoalId="";
   if(editingBuildGoalId&&!validBuildGoalIds.has(editingBuildGoalId))editingBuildGoalId="";
   monthMeta=n.monthMeta;
@@ -1583,6 +1686,7 @@ function validateBundleStrictRaw(b){
     requireStoredBoolean(a.payInFullEnabled,`accounts[${i}].payInFullEnabled`);
     requireStoredNonNegativeNumber(a.payInFullBalance,`accounts[${i}].payInFullBalance`);
     if(a.payInFullReviewRequired!==undefined)requireStoredBoolean(a.payInFullReviewRequired,`accounts[${i}].payInFullReviewRequired`);
+    if(a.guideDueDay!==undefined&&a.guideDueDay!==null&&a.guideDueDay!==""){const gd=Number(a.guideDueDay);if(!Number.isInteger(gd)||gd<0||gd>31)throw new Error(`accounts[${i}].guideDueDay が不正です。`);}
     if(a.type!=="クレジットカード"&&(a.payInFullEnabled||a.payInFullBalance>0||a.payInFullReviewRequired))throw new Error(`accounts[${i}] の一括払い情報がクレジットカード以外に設定されています。`);
     if(a.type==="クレジットカード"&&a.payInFullReviewRequired&&a.payInFullEnabled)throw new Error(`accounts[${i}] は支払方法未確認なのに毎月一括払いが有効です。`);
     requireStoredBoolean(a.archived,`accounts[${i}].archived`);
@@ -1611,6 +1715,8 @@ function validateBundleStrictRaw(b){
   validateTxn(b.fixedPayments,"fixedPayments");
   for(const [i,p] of b.fixedPayments.entries()){
     if(!fixedTypes.has(String(p.type||"")))throw new Error(`fixedPayments[${i}].type が不正です。`);
+    if(p.completesMonth!==undefined)requireStoredBoolean(p.completesMonth,`fixedPayments[${i}].completesMonth`);
+    if(p.plannedAmount!==undefined)requireStoredNonNegativeNumber(p.plannedAmount,`fixedPayments[${i}].plannedAmount`);
   }
   validateTxn(b.feeEvents,"feeEvents");
   validateTxn(b.borrowEvents,"borrowEvents");
@@ -1659,13 +1765,13 @@ function validateBundleStrictRaw(b){
     if(!["arrears","otherDebt","account"].includes(p.targetType))throw new Error(`payments[${i}].targetType が不正です。`);
     if(p.targetType==="account"&&!accountIds.has(String(p.targetId)))throw new Error(`payments[${i}] が存在しない借入先を参照しています。`);
     requireCampaignCheckpointPair(p,`payments[${i}]`);
-    requireStoredNonNegativeNumber(p.sourceAppliedAmount,`payments[${i}].sourceAppliedAmount`);
-    if(p.sourceAppliedAmount>p.amount)throw new Error(`payments[${i}].sourceAppliedAmount が返済額を超えています。`);
-    if(p.sourceSaveId){
-      if(!saveIds.has(p.sourceSaveId))throw new Error(`payments[${i}] が存在しない節約記録を参照しています。`);
-      linkedAppliedBySave.set(p.sourceSaveId,(linkedAppliedBySave.get(p.sourceSaveId)||0)+p.sourceAppliedAmount);
-    }else if(p.sourceAppliedAmount!==0){
-      throw new Error(`payments[${i}] は節約記録未指定なのにsourceAppliedAmountがあります。`);
+    if(!Array.isArray(p.sourceSaveAllocations))throw new Error(`payments[${i}].sourceSaveAllocations がありません。`);
+    const allocations=normalizeSourceSaveAllocations(p.sourceSaveAllocations,p.sourceSaveId,p.sourceAppliedAmount,`payments[${i}].sourceSaveAllocations`);
+    const appliedTotal=allocations.reduce((n,a)=>n+Number(a.amount||0),0);
+    if(appliedTotal>Number(p.amount||0)+0.000001)throw new Error(`payments[${i}] の節約反映合計が返済額を超えています。`);
+    for(const a of allocations){
+      if(!saveIds.has(a.saveId))throw new Error(`payments[${i}] が存在しない節約記録を参照しています。`);
+      linkedAppliedBySave.set(a.saveId,(linkedAppliedBySave.get(a.saveId)||0)+a.amount);
     }
   }
   for(const [i,s] of b.saves.entries()){
@@ -1674,13 +1780,13 @@ function validateBundleStrictRaw(b){
   }
   const buildAppliedBySave=new Map();
   for(const [i,bs] of (b.buildSavings||[]).entries()){
-    const sourceSaveId=String(bs.sourceSaveId||"");
-    const sourceAppliedAmount=Number(bs.sourceAppliedAmount||0);
-    if(sourceSaveId){
-      if(!saveIds.has(sourceSaveId))throw new Error(`buildSavings[${i}] が存在しない節約記録を参照しています。`);
-      buildAppliedBySave.set(sourceSaveId,(buildAppliedBySave.get(sourceSaveId)||0)+sourceAppliedAmount);
-    }else if(sourceAppliedAmount!==0){
-      throw new Error(`buildSavings[${i}] は節約記録未指定なのにsourceAppliedAmountがあります。`);
+    if(!Array.isArray(bs.sourceSaveAllocations))throw new Error(`buildSavings[${i}].sourceSaveAllocations がありません。`);
+    const allocations=normalizeSourceSaveAllocations(bs.sourceSaveAllocations,bs.sourceSaveId,bs.sourceAppliedAmount,`buildSavings[${i}].sourceSaveAllocations`);
+    const appliedTotal=allocations.reduce((n,a)=>n+Number(a.amount||0),0);
+    if(appliedTotal>Number(bs.amount||0)+0.000001)throw new Error(`buildSavings[${i}] の節約反映合計が貯蓄額を超えています。`);
+    for(const a of allocations){
+      if(!saveIds.has(a.saveId))throw new Error(`buildSavings[${i}] が存在しない節約記録を参照しています。`);
+      buildAppliedBySave.set(a.saveId,(buildAppliedBySave.get(a.saveId)||0)+a.amount);
     }
   }
   for(const [i,s] of b.saves.entries()){
@@ -1791,9 +1897,8 @@ function validateBundleStrictRaw(b){
       if(x.amount<=0)throw new Error(`buildSavings[${i}].amount が0以下です。`);
       if(x.transferFromBalance!==undefined)requireStoredBoolean(x.transferFromBalance,`buildSavings[${i}].transferFromBalance`);
       if(x.goalId!==undefined&&x.goalId!==null&&String(x.goalId)!=="")requireSafeId(x.goalId,`buildSavings[${i}].goalId`);
-      if(x.sourceSaveId!==undefined&&x.sourceSaveId!==null&&String(x.sourceSaveId)!=="")requireSafeId(x.sourceSaveId,`buildSavings[${i}].sourceSaveId`);
-      if(x.sourceAppliedAmount!==undefined)requireStoredNonNegativeNumber(x.sourceAppliedAmount,`buildSavings[${i}].sourceAppliedAmount`);
-      if(Number(x.sourceAppliedAmount||0)>Number(x.amount||0))throw new Error(`buildSavings[${i}].sourceAppliedAmount が貯蓄額を超えています。`);
+      const allocations=normalizeSourceSaveAllocations(x.sourceSaveAllocations,x.sourceSaveId,x.sourceAppliedAmount,`buildSavings[${i}].sourceSaveAllocations`);
+      if(allocations.reduce((n,a)=>n+Number(a.amount||0),0)>Number(x.amount||0)+0.000001)throw new Error(`buildSavings[${i}] の節約反映合計が貯蓄額を超えています。`);
     }
   }
   if(b.buildWithdrawals!==undefined){
@@ -2103,6 +2208,7 @@ function normalizeAccountArray(v){
       payInFullEnabled,
       payInFullBalance,
       payInFullReviewRequired,
+      guideDueDay:type==="クレジットカード"?normalizeGuideDay(x.guideDueDay):0,
       archived
     };
   }),"accounts");
@@ -2135,8 +2241,7 @@ function normalizePaymentArray(v){
       targetName:String(x.targetName||"返済"),
       amount:requirePositiveAmount(x.amount,`payments[${i}]`),
       memo:String(x.memo||""),
-      sourceSaveId:x.sourceSaveId?requireSafeId(x.sourceSaveId,`payments[${i}] sourceSaveId`):"",
-      sourceAppliedAmount:finiteNonNegative(x.sourceAppliedAmount,0),
+      ...sourceSaveLegacyFields(normalizeSourceSaveAllocations(x.sourceSaveAllocations,x.sourceSaveId,x.sourceAppliedAmount,`payments[${i}].sourceSaveAllocations`)),
       campaignBefore:normalizeCampaignCheckpoint(x.campaignBefore,`payments[${i}].campaignBefore`),
       campaignAfter:normalizeCampaignCheckpoint(x.campaignAfter,`payments[${i}].campaignAfter`)
     };
@@ -2153,7 +2258,9 @@ function normalizeFixedPaymentArray(v){
       createdAt:legacyCreatedAt(x.createdAt),
       type,
       amount:requirePositiveAmount(x.amount,`fixedPayments[${i}]`),
-      memo:String(x.memo||"")
+      memo:String(x.memo||""),
+      completesMonth:!!x.completesMonth,
+      plannedAmount:finiteNonNegative(x.plannedAmount,0)
     };
   }),"fixedPayments");
 }
@@ -2276,10 +2383,10 @@ function normalizeBuildSavingsArray(v){
     if(!(Number.isFinite(createdAt)&&createdAt>0))throw new Error(`buildSavings[${i}].createdAt が不正です。`);
     const goalId=x.goalId===undefined||x.goalId===null?"":String(x.goalId);
     if(goalId&&!validSafeId(goalId))throw new Error(`buildSavings[${i}].goalId が不正です。`);
-    const sourceSaveId=x.sourceSaveId===undefined||x.sourceSaveId===null?"":String(x.sourceSaveId);
-    if(sourceSaveId&&!validSafeId(sourceSaveId))throw new Error(`buildSavings[${i}].sourceSaveId が不正です。`);
-    const sourceAppliedAmount=Math.min(amount,finiteNonNegative(x.sourceAppliedAmount,0));
-    out.push({id,date,amount,createdAt,memo:String(x.memo||""),transferFromBalance:!!x.transferFromBalance,goalId,sourceSaveId,sourceAppliedAmount});
+    const sourceSaveAllocations=normalizeSourceSaveAllocations(x.sourceSaveAllocations,x.sourceSaveId,x.sourceAppliedAmount,`buildSavings[${i}].sourceSaveAllocations`);
+    const sourceAppliedTotal=sourceSaveAllocations.reduce((n,a)=>n+Number(a.amount||0),0);
+    if(sourceAppliedTotal>amount+0.000001)throw new Error(`buildSavings[${i}].sourceSaveAllocations が貯蓄額を超えています。`);
+    out.push({id,date,amount,createdAt,memo:String(x.memo||""),transferFromBalance:!!x.transferFromBalance,goalId,...sourceSaveLegacyFields(sourceSaveAllocations)});
   }
   return out;
 }
@@ -2338,19 +2445,66 @@ function normalizeDebtTransitionState(v){
   return {protectionMonth,protectionAmount,protectionStartedAt,previousBossInitialDebt,previousBossStartedAt,previousBossStartedAtApprox,newBossStartedAt};
 }
 
+function normalizeSourceSaveAllocations(v,legacySaveId="",legacyAmount=0,label="sourceSaveAllocations"){
+  let raw=Array.isArray(v)?v:null;
+  if(raw===null){
+    const id=String(legacySaveId||""),amount=finiteNonNegative(legacyAmount,0);
+    raw=id&&amount>0?[{saveId:id,amount}]:[];
+  }
+  const out=[],seen=new Set();
+  for(const [i,a] of raw.entries()){
+    if(!a||typeof a!=="object"||Array.isArray(a))throw new Error(`${label}[${i}] が不正です。`);
+    const saveId=String(a.saveId||"");
+    if(!validSafeId(saveId))throw new Error(`${label}[${i}].saveId が不正です。`);
+    if(seen.has(saveId))throw new Error(`${label} に同じ節約記録が重複しています。`);
+    seen.add(saveId);
+    const amount=finiteNonNegative(a.amount,-1);
+    if(!(amount>0))throw new Error(`${label}[${i}].amount が不正です。`);
+    out.push({saveId,amount});
+  }
+  return out;
+}
+function sourceSaveAllocationsForRecord(x){
+  if(!x||typeof x!=="object")return [];
+  try{return normalizeSourceSaveAllocations(x.sourceSaveAllocations,x.sourceSaveId,x.sourceAppliedAmount,"sourceSaveAllocations")}catch(_){return []}
+}
+function sourceSaveAllocationTotal(x){return sourceSaveAllocationsForRecord(x).reduce((n,a)=>n+Math.max(0,Number(a.amount||0)),0)}
+function sourceSaveAllocationForId(x,id){return sourceSaveAllocationsForRecord(x).filter(a=>a.saveId===id).reduce((n,a)=>n+Math.max(0,Number(a.amount||0)),0)}
+function sourceSaveLegacyFields(allocations){
+  const arr=Array.isArray(allocations)?allocations:[],total=arr.reduce((n,a)=>n+Math.max(0,Number(a.amount||0)),0);
+  return {sourceSaveId:arr.length===1?arr[0].saveId:"",sourceAppliedAmount:total,sourceSaveAllocations:arr.map(a=>({saveId:a.saveId,amount:Number(a.amount||0)}))};
+}
+function sourceSaveAllocationDetailsHtml(record){
+  const allocations=sourceSaveAllocationsForRecord(record);
+  if(!allocations.length)return "";
+  const total=allocations.reduce((n,a)=>n+Math.max(0,Number(a.amount||0)),0);
+  const rows=allocations.map(a=>{
+    const src=saves.find(x=>x.id===a.saveId);
+    const title=src?String(src.memo||categoryDisplayLabel(src.category)||src.category||"節約記録"):"節約記録（元データなし）";
+    const meta=src?`${String(src.date||"")} / POTENTIAL ${yen(src.amount)}`:"";
+    return `<div class="source-save-detail-row"><div><strong>${esc(title)}</strong>${meta?`<div>${esc(meta)}</div>`:""}</div><div>${yen(a.amount)}</div></div>`;
+  }).join("");
+  return `<details class="source-save-detail"><summary>節約から振替 ${yen(total)}（${allocations.length}件）</summary><div class="source-save-detail-body">${rows}</div></details>`;
+}
+
 function migrateBundleToCurrentSchema(source){
   if(!source||typeof source!=="object")return source;
   const schema=Number(source.schemaVersion||0);
   if(schema===SCHEMA_VERSION)return source;
-  if(schema!==23)return source;
+  if(![23,24,25].includes(schema))return source;
   const b=JSON.parse(JSON.stringify(source));
+  if(schema===23){
+    b.cardSettlements=Array.isArray(b.cardSettlements)?b.cardSettlements:[];
+    b.accounts=(Array.isArray(b.accounts)?b.accounts:[]).map(a=>{
+      const type=String(a?.type||"その他");
+      return {...a,payInFullEnabled:false,payInFullBalance:0,payInFullReviewRequired:type==="クレジットカード"&&!a?.archived};
+    });
+    b.expenses=(Array.isArray(b.expenses)?b.expenses:[]).map(e=>({...e,cardPayInFullAmount:0}));
+  }
+  b.fixedPayments=(Array.isArray(b.fixedPayments)?b.fixedPayments:[]).map(p=>({...p,completesMonth:!!p.completesMonth,plannedAmount:finiteNonNegative(p.plannedAmount,0)}));
+  b.payments=(Array.isArray(b.payments)?b.payments:[]).map(p=>({...p,sourceSaveAllocations:normalizeSourceSaveAllocations(p?.sourceSaveAllocations,p?.sourceSaveId,p?.sourceAppliedAmount,"payments.sourceSaveAllocations")}));
+  b.buildSavings=(Array.isArray(b.buildSavings)?b.buildSavings:[]).map(x=>({...x,sourceSaveAllocations:normalizeSourceSaveAllocations(x?.sourceSaveAllocations,x?.sourceSaveId,x?.sourceAppliedAmount,"buildSavings.sourceSaveAllocations")}));
   b.schemaVersion=SCHEMA_VERSION;
-  b.cardSettlements=Array.isArray(b.cardSettlements)?b.cardSettlements:[];
-  b.accounts=(Array.isArray(b.accounts)?b.accounts:[]).map(a=>{
-    const type=String(a?.type||"その他");
-    return {...a,payInFullEnabled:false,payInFullBalance:0,payInFullReviewRequired:type==="クレジットカード"&&!a?.archived};
-  });
-  b.expenses=(Array.isArray(b.expenses)?b.expenses:[]).map(e=>({...e,cardPayInFullAmount:0}));
   return b;
 }
 function normalizeBundleDeep(source,{requireComplete=true}={}){
@@ -2374,6 +2528,7 @@ function normalizeBundleDeep(source,{requireComplete=true}={}){
   out.borrowEvents=normalizeBorrowEventArray(b.borrowEvents);
   out.cashLedger=normalizeCashLedgerArray(b.cashLedger);
   out.buildState=normalizeBuildState(b.buildState);
+  out.guideTimingState=normalizeGuideTimingState(b.guideTimingState);
   out.buildSavings=normalizeBuildSavingsArray(b.buildSavings);
   out.buildWithdrawals=normalizeBuildWithdrawalsArray(b.buildWithdrawals);
   out.buildGoals=normalizeBuildGoalsArray(b.buildGoals);
@@ -3218,21 +3373,42 @@ function categorizedSpend(k=selectedMonth){
 function fixedPaidByType(k,type){
   return fixedPayments.filter(p=>p.type===type&&String(p.date).startsWith(k)).reduce((s,p)=>s+Number(p.amount||0),0);
 }
+function fixedCompletionRecord(k,type){
+  return fixedPayments
+    .filter(p=>p.type===type&&String(p.date).startsWith(k)&&!!p.completesMonth)
+    .slice()
+    .sort((a,b)=>Number(b.createdAt||0)-Number(a.createdAt||0)||String(b.id).localeCompare(String(a.id)))[0]||null;
+}
+function fixedMonthCompleted(k,type){
+  const paid=fixedPaidByType(k,type),completion=fixedCompletionRecord(k,type);
+  if(completion)return true;
+  if(k===currentMonthKey()){const planned=Math.max(0,sNum(type));return planned>0&&paid+0.000001>=planned;}
+  return false;
+}
+function syncCurrentFixedCompletionPlans(){
+  const k=currentMonthKey();
+  for(const type of ["rent","utility","phone","fixed"]){
+    const rec=fixedCompletionRecord(k,type);if(rec)rec.plannedAmount=Math.max(0,sNum(type));
+  }
+}
 function effectiveFixedForMonth(k){
   const plan=monthPlan(k);
-  const configured={
-    rent:sNum("rent"),
-    utility:sNum("utility"),
-    phone:sNum("phone"),
-    fixed:sNum("fixed")
-  };
-  // 過去月は現在の設定値ではなくスナップショットの総固定費を基準にし、
-  // 超過分だけ実績で上乗せする。
+  const types=["rent","utility","phone","fixed"];
   if(isPastMonth(k)){
-    const paidTotal=["rent","utility","phone","fixed"].reduce((s,t)=>s+fixedPaidByType(k,t),0);
-    return Math.max(Number(plan.fixed||0),paidTotal);
+    const paidTotal=types.reduce((s,t)=>s+fixedPaidByType(k,t),0);
+    let adjusted=Math.max(0,Number(plan.fixed||0));
+    for(const type of types){
+      const completion=fixedCompletionRecord(k,type);
+      if(!completion)continue;
+      const paid=fixedPaidByType(k,type),planned=Math.max(0,Number(completion.plannedAmount||0));
+      adjusted+=paid-planned;
+    }
+    return Math.max(0,adjusted,paidTotal);
   }
-  return ["rent","utility","phone","fixed"].reduce((s,t)=>s+Math.max(Number(configured[t]||0),fixedPaidByType(k,t)),0);
+  return types.reduce((s,type)=>{
+    const planned=Math.max(0,sNum(type)),paid=fixedPaidByType(k,type);
+    return s+(fixedMonthCompleted(k,type)?paid:Math.max(planned,paid));
+  },0);
 }
 function monthBudgetBreakdown(k=selectedMonth,extra=null){
   const s={...categorizedSpend(k)};
@@ -3494,6 +3670,7 @@ function activateStorageLock(message){
 function activateFirstSetup(){
   setupRequired=true;
   settingsState={...FRESH_SETTINGS};
+  guideTimingState={...DEFAULT_GUIDE_TIMING_STATE};
   closeQuickActionMenu();
   const fab=document.getElementById("quickExpenseFab");if(fab)fab.style.display="none";
   applySettingsToForm();
@@ -3539,7 +3716,19 @@ function syncQuickActionVisibility(page){
   if(!visible)closeQuickActionMenu();
   fab.style.display=visible?"grid":"none";
 }
+function clearPendingPotentialHandoffs(){
+  const hadPending=!!(pendingSaveId||pendingBuildSaveId||pendingSaveAllocations.length||pendingBuildSaveAllocations.length);
+  pendingSaveId=null;pendingBuildSaveId=null;pendingSaveAllocations=[];pendingBuildSaveAllocations=[];
+  if(hadPending){
+    renderPendingSaveLink();
+    const sourceNote=document.getElementById("buildSaveSourceNote");
+    if(sourceNote){sourceNote.style.display="none";sourceNote.innerHTML="";}
+  }
+  return hadPending;
+}
 function go(page){
+  const currentPage=document.querySelector(".page.active")?.id||"";
+  if(currentPage==="debt"&&page!=="debt")clearPendingPotentialHandoffs();
   if(setupRequired&&page!=="settings"){
     alert("先に初回設定を保存してください。初回設定が完了するまで他の画面は利用できません。");
     page="settings";
@@ -3708,10 +3897,21 @@ function renderPaymentCardManager(){
       ?`<button type="button" class="secondary" onclick="restoreAccount('${a.id}')">復元</button>`
       :review
         ?`<button type="button" onclick="confirmMigratedCardMode('${a.id}',true)">毎月一括として確認</button><button type="button" class="secondary" onclick="confirmMigratedCardMode('${a.id}',false)">借金扱いとして確認</button>`
-        :`<button type="button" class="secondary" onclick="toggleCardPayInFull('${a.id}')">${a.payInFullEnabled?"一括OFF":"一括ON"}</button>${reclassifiableCardOpeningDebt(a.id)>0?`<button type="button" class="secondary" onclick="convertCardDebtToScheduled('${a.id}')">旧残高→一括予定</button>`:""}${scheduled>0?`<button type="button" class="secondary" onclick="convertCardScheduledToDebt('${a.id}')">一括予定→借金</button>`:""}<button type="button" class="secondary" onclick="correctCardScheduledBalance('${a.id}')">一括予定を訂正</button><button type="button" class="secondary" onclick="openCardAdvancedEditor('${a.id}')">詳細編集</button><button type="button" class="secondary" onclick="removeAccount('${a.id}')">${(accountHasHistory(a.id)||accountHasAnyDebtEvent(a.id))?"アーカイブ":"削除"}</button>`;
-    return `<div class="payment-card-row"><div class="payment-card-row-main"><strong>${esc(a.name)}${review?' <span class="yellow">要確認</span>':''}</strong><small>${status} / ${modeLabel} / 未払合計 ${yen(total)}（一括予定 ${yen(scheduled)}・借金扱い ${yen(debt)}）${Number(a.payment||0)>0?` / 毎月返済 ${yen(a.payment)}`:""}${Number(a.apr||0)>0?` / 年利 ${a.apr}%`:""}</small></div><div class="payment-card-row-actions">${actions}</div></div>`;
+        :`<button type="button" class="secondary" onclick="toggleCardPayInFull('${a.id}')">${a.payInFullEnabled?"一括OFF":"一括ON"}</button><button type="button" class="secondary" onclick="setCardGuideDueDay('${a.id}')">引落日</button>${reclassifiableCardOpeningDebt(a.id)>0?`<button type="button" class="secondary" onclick="convertCardDebtToScheduled('${a.id}')">旧残高→一括予定</button>`:""}${scheduled>0?`<button type="button" class="secondary" onclick="convertCardScheduledToDebt('${a.id}')">一括予定→借金</button>`:""}<button type="button" class="secondary" onclick="correctCardScheduledBalance('${a.id}')">一括予定を訂正</button><button type="button" class="secondary" onclick="openCardAdvancedEditor('${a.id}')">詳細編集</button><button type="button" class="secondary" onclick="removeAccount('${a.id}')">${(accountHasHistory(a.id)||accountHasAnyDebtEvent(a.id))?"アーカイブ":"削除"}</button>`;
+    const dueCopy=normalizeGuideDay(a.guideDueDay)>0?` / <span class="card-guide-day">引落日 ${guideDayLabel(a.guideDueDay)}</span>`:" / 引落日 未設定";
+    return `<div class="payment-card-row"><div class="payment-card-row-main"><strong>${esc(a.name)}${review?' <span class="yellow">要確認</span>':''}</strong><small>${status} / ${modeLabel} / 未払合計 ${yen(total)}（一括予定 ${yen(scheduled)}・借金扱い ${yen(debt)}）${dueCopy}${Number(a.payment||0)>0?` / 毎月返済 ${yen(a.payment)}`:""}${Number(a.apr||0)>0?` / 年利 ${a.apr}%`:""}</small></div><div class="payment-card-row-actions">${actions}</div></div>`;
   }).join("");
 }
+window.setCardGuideDueDay=id=>{
+  const a=accounts.find(x=>x.id===id&&x.type==="クレジットカード");if(!a)return;
+  const current=normalizeGuideDay(a.guideDueDay);
+  const raw=prompt(`${a.name} の毎月の引落日を1〜31で入力してください。\n空欄または0で案内日を解除します。\n29〜31日は短い月では月末扱いです。`,current?String(current):"");
+  if(raw===null)return;
+  const s=String(raw).trim(),n=s===""?0:Number(s);
+  if(!Number.isFinite(n)||n<0||n>31||Math.trunc(n)!==n){alert("引落日は1〜31の整数、または0で入力してください。");return}
+  a.guideDueDay=normalizeGuideDay(n);
+  if(commit({planChange:false}))showSaveToast("カード引落日の案内を更新しました",`${a.name} / ${a.guideDueDay?`毎月 ${guideDayLabel(a.guideDueDay)}`:"予定日未設定"}`);
+};
 window.confirmMigratedCardMode=(id,payInFull)=>{
   const a=accounts.find(x=>x.id===id&&x.type==="クレジットカード");if(!a)return;
   if(!a.payInFullReviewRequired)return;
@@ -3787,13 +3987,13 @@ window.correctCardScheduledBalance=id=>{
   if(commit({planChange:false}))showSaveToast("一括払い予定を訂正しました",`${a.name} / ${yen(current)} → ${yen(next)}`);
 };
 
-function appendSimpleCreditCard(name,balance=0,payment=0,apr=0,payInFullEnabled=true){
-  name=String(name||"").trim();balance=debtYen(balance);payment=Math.max(0,Number(payment)||0);apr=Math.max(0,Number(apr)||0);payInFullEnabled=!!payInFullEnabled;
+function appendSimpleCreditCard(name,balance=0,payment=0,apr=0,payInFullEnabled=true,guideDueDay=0){
+  name=String(name||"").trim();balance=debtYen(balance);payment=Math.max(0,Number(payment)||0);apr=Math.max(0,Number(apr)||0);payInFullEnabled=!!payInFullEnabled;guideDueDay=normalizeGuideDay(guideDueDay);
   if(!name){alert("カード名を入力してください。");return ""}
   if(name.length>60){alert("カード名は60文字以内で入力してください。");return ""}
   if(accounts.some(a=>!a.archived&&a.type==="クレジットカード"&&String(a.name||"").trim().toLowerCase()===name.toLowerCase())){alert("同じ名前のクレジットカードがすでに登録されています。");return ""}
   const beforeDebt=totalDebt(),id=uid(),debtBalance=payInFullEnabled?0:balance,scheduledBalance=payInFullEnabled?balance:0,existingDebt=debtBalance>0;
-  accounts.push({id,name,type:"クレジットカード",balance:debtBalance,payment,apr,payInFullEnabled,payInFullBalance:scheduledBalance,payInFullReviewRequired:false,archived:false});
+  accounts.push({id,name,type:"クレジットカード",balance:debtBalance,payment,apr,payInFullEnabled,payInFullBalance:scheduledBalance,payInFullReviewRequired:false,guideDueDay,archived:false});
   if(!accountMonthState[currentMonthKey()])accountMonthState[currentMonthKey()]={};
   accountMonthState[currentMonthKey()][id]={openingBalance:existingDebt?debtBalance:0,openingCapturedAt:new Date().toISOString(),accountType:"クレジットカード",createdThisMonth:!existingDebt};
   if(setupRequired){renderPaymentCardManager();renderExpensePaymentOptions();return id}
@@ -3809,7 +4009,7 @@ window.openCardAdvancedEditor=id=>{
   window.setTimeout(()=>editAccount(id),80);
 };
 function clearPaymentCardAddForm(){
-  ["paymentCardName","paymentCardBalance","paymentCardMonthlyPayment","paymentCardApr"].forEach(id=>{const el=document.getElementById(id);if(el)el.value=""});
+  ["paymentCardName","paymentCardBalance","paymentCardMonthlyPayment","paymentCardApr","paymentCardGuideDueDay"].forEach(id=>{const el=document.getElementById(id);if(el)el.value=""});
   const full=document.getElementById("paymentCardPayInFull");if(full)full.checked=true;
 }
 function renderCardSettlementTargets(){
@@ -4024,6 +4224,7 @@ function ensureRuntimeMonth(){
   actualRepayDateUserEdited=false;
   document.getElementById("fixedPayDate").value=todayISO();
   document.getElementById("fixedPayDate").max=todayISO();
+  const salaryDate=document.getElementById("salaryDepositDate");if(salaryDate){salaryDate.value=todayISO();salaryDate.max=todayISO();}
   fixedPayDateUserEdited=false;
   syncMonthInputs();
 
@@ -4358,7 +4559,7 @@ function renderBuildSavingsHistory(){
   const arr=buildSavings.slice().sort((a,b)=>String(b.date).localeCompare(String(a.date))||Number(b.createdAt)-Number(a.createdAt));
   if(!arr.length){el.innerHTML='<div class="footer">実際の貯蓄記録はまだありません。</div>';return}
   const options=x=>[{id:"",name:"未分類"},...buildGoals].map(g=>`<option value="${esc(g.id)}" ${(x.goalId||"")===g.id?"selected":""}>${esc(g.name)}</option>`).join("");
-  el.innerHTML=arr.map(x=>`<div class="logrow"><div><strong>${esc(x.memo||"貯蓄")}</strong><div class="meta">${esc(x.date)} / BUILD貯蓄${x.transferFromBalance?" / 現在残高から振替":""}</div><div class="build-history-goal-edit"><span>目的</span><select class="build-history-goal-select" aria-label="${esc(x.memo||"貯蓄")} の目的" onchange="reassignBuildSavingGoal('${x.id}',this.value)">${options(x)}</select></div></div><div class="amt green">${yen(x.amount)}</div><button class="secondary small" onclick="removeBuildSaving('${x.id}')">削除</button></div>`).join("");
+  el.innerHTML=arr.map(x=>`<div class="logrow"><div><strong>${esc(x.memo||"貯蓄")}</strong><div class="meta">${esc(x.date)} / BUILD貯蓄${x.transferFromBalance?" / 現在残高から振替":""}</div>${sourceSaveAllocationDetailsHtml(x)}<div class="build-history-goal-edit"><span>目的</span><select class="build-history-goal-select" aria-label="${esc(x.memo||"貯蓄")} の目的" onchange="reassignBuildSavingGoal('${x.id}',this.value)">${options(x)}</select></div></div><div class="amt green">${yen(x.amount)}</div><button class="secondary small" onclick="removeBuildSaving('${x.id}')">削除</button></div>`).join("");
 }
 window.reassignBuildSavingGoal=(id,goalId)=>{
   const x=buildSavings.find(v=>v.id===id);if(!x)return;
@@ -4394,6 +4595,216 @@ function renderBuildWithdrawalHistory(){
   if(!arr.length){el.innerHTML='<div class="footer">取り崩し履歴はまだありません。</div>';return}
   el.innerHTML=arr.map(x=>`<div class="logrow"><div><strong>${esc(x.memo||"貯蓄取り崩し")}</strong><div class="meta">${esc(x.date)} / ${esc(buildGoalName(x.goalId||""))}${x.transferToBalance?" / 現在残高へ戻し":""}</div></div><div class="amt red">-${yen(x.amount)}</div><button class="secondary small" onclick="removeBuildWithdrawal('${x.id}')">取消</button></div>`).join("");
 }
+const GUIDE_TIMING_FIELDS={guideIncomeDay:"incomeDay",guideRentDay:"rentDay",guideUtilityDay:"utilityDay",guidePhoneDay:"phoneDay",guideFixedDay:"fixedDay"};
+function applyGuideTimingToForm(){
+  for(const [id,key] of Object.entries(GUIDE_TIMING_FIELDS)){
+    const el=document.getElementById(id);if(el&&document.activeElement!==el)el.value=guideTimingState[key]||"";
+  }
+}
+function readGuideTimingForm(){
+  const next={...guideTimingState};
+  for(const [id,key] of Object.entries(GUIDE_TIMING_FIELDS)){
+    const el=document.getElementById(id);if(!el)continue;
+    const raw=String(el.value||"").trim(),n=raw===""?0:Number(raw);
+    if(!Number.isFinite(n)||n<0||n>31||Math.trunc(n)!==n){alert(`${el.previousElementSibling?.textContent||"予定日"} は1〜31の整数、または空欄で入力してください。`);el.focus();return null}
+    next[key]=normalizeGuideDay(n);
+  }
+  return next;
+}
+const GUIDED_FIXED_TYPES=["rent","utility","phone","fixed"];
+function hasOwnMonthIncome(k=currentMonthKey()){
+  return !!monthMeta[k]&&Object.prototype.hasOwnProperty.call(monthMeta[k],"income");
+}
+function salaryGuideRawEntries(k=currentMonthKey()){
+  return cashLedger.filter(x=>String(x.date||"").startsWith(k)&&(x.type==="給与入金"||x.type==="給与入金確認"||(x.type==="残高調整"&&Number(x.amount||0)>0&&/(給与|給料)/.test(String(x.memo||"")))));
+}
+function salaryGuideEntryCancelled(entryId,k=currentMonthKey()){
+  return cashLedger.some(x=>String(x.date||"").startsWith(k)&&(x.type==="給与入金取消"||x.type==="給与入金確認取消")&&String(x.refId||"")===String(entryId||""));
+}
+function salaryGuideEntries(k=currentMonthKey()){
+  return salaryGuideRawEntries(k).filter(x=>!salaryGuideEntryCancelled(x.id,k));
+}
+function salaryGuideRecordedAmount(k=currentMonthKey()){
+  return salaryGuideEntries(k).filter(x=>x.type==="給与入金"||x.type==="残高調整").reduce((n,x)=>n+Math.max(0,Number(x.amount||0)),0);
+}
+function salaryGuideExplicitConfirmed(k=currentMonthKey()){
+  return salaryGuideEntries(k).some(x=>x.type==="給与入金確認");
+}
+function salaryGuideConfirmed(k=currentMonthKey()){
+  const expected=hasOwnMonthIncome(k)?finiteNonNegative(monthMeta[k]?.income,0):sNum("income");
+  if(hasOwnMonthIncome(k)&&expected<=0)return true;
+  if(salaryGuideExplicitConfirmed(k))return true;
+  const recorded=salaryGuideRecordedAmount(k);
+  return expected>0?recorded+0.000001>=expected:recorded>0;
+}
+function guidedRepayStatus(k=currentMonthKey()){
+  const bd=monthBudgetBreakdown(k),target=Math.max(0,Number(bd.plan.repayBudget||0)),actual=Math.max(0,Number(bd.actualRepay||0));
+  return {target,actual,remaining:Math.max(0,target-actual)};
+}
+function guideTimingForItem(day,k=currentMonthKey()){
+  day=normalizeGuideDay(day);
+  if(!day)return {future:false,dueDate:"",dueLabel:""};
+  return {future:guideIsBeforeDue(day,k),dueDate:guideDateForMonth(day,k),dueLabel:guideDueDetail(day,k)};
+}
+function cardMonthPayInFullUsage(accountId,k=currentMonthKey()){
+  return monthExpenses(k).filter(e=>e.paymentMethod===`account:${accountId}`&&finiteNonNegative(e.cardPayInFullAmount,0)>0).reduce((n,e)=>n+finiteNonNegative(e.cardPayInFullAmount,0),0);
+}
+function cardMonthSettledAmount(accountId,k=currentMonthKey()){
+  return cardSettlements.filter(x=>x.targetId===accountId&&String(x.date||"").startsWith(k)).reduce((n,x)=>n+finiteNonNegative(x.amount,0),0);
+}
+function cardMonthScheduledToDebtAmount(accountId,k=currentMonthKey()){
+  return feeEvents.filter(x=>x.targetType==="account"&&x.targetId===accountId&&String(x.date||"").startsWith(k)&&finiteNonNegative(x.sourcePayInFullAmount,0)>0)
+    .reduce((n,x)=>n+finiteNonNegative(x.sourcePayInFullAmount,0),0);
+}
+function cardGuideOpeningScheduledEstimate(accountId,k=currentMonthKey()){
+  const a=accounts.find(x=>x.id===accountId&&x.type==="クレジットカード");if(!a)return 0;
+  const current=debtYen(a.payInFullBalance),settled=cardMonthSettledAmount(accountId,k),newUse=cardMonthPayInFullUsage(accountId,k),converted=cardMonthScheduledToDebtAmount(accountId,k);
+  // 今月の新規一括利用を今月中に分割・リボ等へ変更した分は、当月引落し対象から除外するため
+  // 「新規利用として残っている一括予定」だけを差し引く。conversion が newUse を超えた分は
+  // 月初一括予定から借金へ移したものとみなし、現在残高側の減少をそのまま反映する。
+  const remainingNewUse=Math.max(0,newUse-converted);
+  return Math.max(0,current+settled-remainingNewUse);
+}
+function cardGuideStatus(a,k=currentMonthKey()){
+  const day=normalizeGuideDay(a?.guideDueDay);if(!a||!day||a.archived||a.payInFullReviewRequired)return null;
+  const opening=cardGuideOpeningScheduledEstimate(a.id,k);
+  if(opening<=0.000001)return null;
+  const paid=cardMonthSettledAmount(a.id,k),remaining=Math.max(0,opening-paid),timing=guideTimingForItem(day,k);
+  const done=remaining<=0.000001,future=!done&&timing.future;
+  return {opening,paid,remaining,done,future,dueDate:timing.dueDate,dueLabel:timing.dueLabel};
+}
+function getMonthlyGuidedItems(){
+  const k=currentMonthKey(),items=[];
+  const reviewCards=paymentCards().filter(a=>!a.archived&&a.payInFullReviewRequired);
+  if(reviewCards.length)items.push({id:"card-review",priority:120,title:"カードの支払方法を確認",detail:`旧版から移行したカード ${reviewCards.length}件が未確認です。`,done:false,future:false,button:"確認する"});
+
+  const incomeSaved=hasOwnMonthIncome(k),income=incomeSaved?finiteNonNegative(monthMeta[k]?.income,0):sNum("income"),incomeTiming=guideTimingForItem(guideTimingState.incomeDay,k);
+  const incomeFuture=!incomeSaved&&incomeTiming.future;
+  items.push({id:"month-income",priority:110,title:"今月の収入を保存",detail:incomeSaved?`${monthLabel(k)}の収入 ${yen(income)} を保存済み。`:incomeFuture?`${incomeTiming.dueLabel}。予定日前なので、まだ入力を急がなくて大丈夫です。`:`基本月収 ${yen(sNum("income"))} を表示中。今月分として確認・保存してください。`,done:incomeSaved,future:incomeFuture,button:"入力する"});
+
+  if(incomeSaved){
+    if(income<=0){
+      items.push({id:"salary-deposit",priority:100,title:"給与・収入の入金を確認",detail:"今月の収入は0円のため、現在残高への入金確認は対象外です。",done:true,future:false,button:""});
+    }else{
+      const salaryConfirmed=salaryGuideConfirmed(k),salaryRecorded=salaryGuideRecordedAmount(k),salaryFuture=!salaryConfirmed&&incomeTiming.future;
+      const salaryDetail=salaryConfirmed?(salaryRecorded>0?`${yen(salaryRecorded)} を給与・収入の入金として現在残高へ反映済み。`:`現在残高へ反映済みとして確認済み。`):salaryFuture?`${incomeTiming.dueLabel}。実際の入金までは現在残高への反映を急がなくて大丈夫です。`:salaryRecorded>0?`${yen(salaryRecorded)} 反映済み / 残り目安 ${yen(Math.max(0,income-salaryRecorded))}`:`実際に入金済みなら現在残高へ反映します。手動反映済みなら確認だけできます。`;
+      items.push({id:"salary-deposit",priority:100,title:"給与・収入の入金を確認",detail:salaryDetail,done:salaryConfirmed,future:salaryFuture,button:"確認・入力"});
+    }
+  }
+
+  const priorities={rent:92,utility:88,phone:84,fixed:80},dayKeys={rent:"rentDay",utility:"utilityDay",phone:"phoneDay",fixed:"fixedDay"};
+  for(const type of GUIDED_FIXED_TYPES){
+    const planned=Math.max(0,sNum(type));if(planned<=0)continue;
+    const paid=Math.max(0,fixedPaidByType(k,type)),explicitDone=!!fixedCompletionRecord(k,type),done=explicitDone||(paid+0.000001>=planned),remaining=Math.max(0,planned-paid),timing=guideTimingForItem(guideTimingState[dayKeys[type]],k),future=!done&&timing.future;
+    const doneDetail=explicitDone&&paid+0.000001<planned?`実績 ${yen(paid)} / 設定目安 ${yen(planned)}。今月分は完了済み。`:`${yen(paid)} 支払済み。`;
+    items.push({id:`fixed-${type}`,priority:priorities[type]||80,title:`${fixedLabel(type)}を記録`,detail:done?doneDetail:future?`${timing.dueLabel} / 設定目安 ${yen(planned)}。予定日前なので未入力でも問題ありません。`:`設定目安 ${yen(planned)} / 支払済み ${yen(paid)} / あと目安 ${yen(remaining)}${timing.dueLabel?` / ${timing.dueLabel}`:""}`,done,future,button:"入力する",type});
+  }
+
+  for(const a of paymentCards()){
+    const status=cardGuideStatus(a,k);if(!status)continue;
+    items.push({id:`card-settle:${a.id}`,priority:72,title:`${a.name} のカード引落しを確認`,detail:status.done?`${yen(status.opening)} の今月引落し目安を支払済みとして記録済み。`:status.future?`${status.dueLabel} / 今月引落し目安 ${yen(status.opening)}。予定日前なので、まだ支払記録は不要です。`:`引落し目安 ${yen(status.opening)} / 支払済み ${yen(status.paid)} / 残り目安 ${yen(status.remaining)}${status.dueLabel?` / ${status.dueLabel}`:""}`,done:status.done,future:status.future,button:"支払を記録",cardId:a.id});
+  }
+
+  if(totalDebt()<=0){
+    const target=Math.max(0,Number(buildState.monthlyTarget||0));
+    if(target>0){const actual=buildMonthSavings(k),remaining=Math.max(0,target-actual);items.push({id:"build-saving",priority:65,title:"今月の貯蓄目標",detail:remaining<=0?`${yen(target)} の目標を達成済み。`:`今月あと ${yen(remaining)} 貯めると目標達成です。`,done:remaining<=0.000001,future:false,button:"貯蓄する"});}
+  }else{
+    const repay=guidedRepayStatus(k);
+    if(repay.target>0)items.push({id:"debt-repay",priority:65,title:"今月の返済を記録",detail:repay.remaining<=0?`返済目安 ${yen(repay.target)} を達成済み。`:`返済目安 ${yen(repay.target)} / あと ${yen(repay.remaining)}`,done:repay.remaining<=0.000001,future:false,button:"返済する"});
+  }
+  return items.sort((a,b)=>b.priority-a.priority);
+}
+function guidedFallbackAction(){
+  if(totalDebt()>0)return {id:"debt-repay",title:"返済または支出を記録",detail:"今月の確認が済んだら、日々の返済・支出を記録します。",button:"返済を記録"};
+  return {id:"expense",title:"今日の支出・節約を記録",detail:"今月の確認は完了しています。日々の記録を続けましょう。",button:"支出を記録"};
+}
+function renderGuidedRow(x,{allowAction=true}={}){
+  const state=x.done?"done":x.future?"future":"pending",icon=x.done?"✓":x.future?"○":"!";
+  return `<div class="guided-row ${state}"><div class="guided-state">${icon}</div><div class="guided-copy"><strong>${esc(x.title)}</strong><small>${esc(x.detail)}</small></div>${!x.done&&!x.future&&allowAction?`<button type="button" class="secondary" onclick="runGuidedAction('${x.id}')">${esc(x.button||"入力する")}</button>`:""}</div>`;
+}
+function renderMonthlyGuide(){
+  const list=document.getElementById("monthlyGuideList"),copy=document.getElementById("monthlyGuideProgressCopy"),bar=document.getElementById("monthlyGuideProgressBar"),next=document.getElementById("homeModeNext");
+  const doneDetails=document.getElementById("monthlyGuideDoneDetails"),doneSummary=document.getElementById("monthlyGuideDoneSummary"),doneList=document.getElementById("monthlyGuideDoneList");
+  const items=getMonthlyGuidedItems(),doneItems=items.filter(x=>x.done),pending=items.filter(x=>!x.done&&!x.future),futureItems=items.filter(x=>!x.done&&x.future);
+  const activeTotal=doneItems.length+pending.length,onlyFuture=!doneItems.length&&!pending.length&&futureItems.length>0;
+  const pct=onlyFuture?0:(activeTotal?Math.round(doneItems.length/activeTotal*100):100);
+  if(copy)copy.textContent=onlyFuture?`今やる確認はありません / ${futureItems.length}件予定前`:`${doneItems.length}件完了 / ${pending.length}件要対応${futureItems.length?` / ${futureItems.length}件予定前`:""}`;
+  if(bar)bar.style.width=`${pct}%`;
+  const primary=pending[0]||guidedFallbackAction(),remainingPending=pending.slice(1);
+  if(list){
+    const visible=[...remainingPending,...futureItems];
+    if(visible.length)list.innerHTML=visible.map(x=>renderGuidedRow(x)).join("");
+    else if(pending.length)list.innerHTML='<div class="guided-empty">要対応はNEXT ACTIONに表示中の1件だけです。</div>';
+    else list.innerHTML='<div class="guided-empty">今月の確認は完了しています。完了済みの内容は下から確認できます。</div>';
+  }
+  if(doneDetails&&doneSummary&&doneList){
+    doneDetails.hidden=!doneItems.length;
+    if(doneItems.length){doneSummary.textContent=`完了済み ${doneItems.length}件を表示`;doneList.innerHTML=doneItems.map(x=>renderGuidedRow(x,{allowAction:false})).join("");}
+    else{doneDetails.open=false;doneList.innerHTML="";}
+  }
+  if(next)next.innerHTML=`<strong>NEXT ACTION</strong><span class="guided-next-title">${esc(primary.title)}</span><span class="guided-next-detail">${esc(primary.detail||"")}</span><button type="button" class="guided-next-btn" onclick="runGuidedAction('${primary.id}')">${esc(primary.button||"操作する")} →</button>`;
+}
+function prepareCurrentMonthGuideAction(){
+  if(selectedMonth!==currentMonthKey()){selectedMonth=currentMonthKey();syncMonthInputs();refresh();}
+}
+function prefillSalaryDeposit(){
+  const k=currentMonthKey(),income=hasOwnMonthIncome(k)?finiteNonNegative(monthMeta[k]?.income,0):sNum("income"),recorded=salaryGuideRecordedAmount(k),remaining=Math.max(0,income-recorded),confirmed=salaryGuideConfirmed(k);
+  const amount=document.getElementById("salaryDepositAmount"),date=document.getElementById("salaryDepositDate"),memo=document.getElementById("salaryDepositMemo");
+  if(amount&&!String(amount.value||"").trim())amount.value=!confirmed&&remaining>0?Math.round(remaining):"";
+  if(date){date.max=todayISO();date.value=todayISO();}
+  if(memo&&!memo.value)memo.placeholder=`例：${monthLabel(k)} 給与`;
+  renderSalaryDepositStatus();
+}
+function renderSalaryDepositStatus(){
+  const el=document.getElementById("salaryDepositStatus");if(!el)return;
+  const date=document.getElementById("salaryDepositDate");if(date){date.max=todayISO();if(!date.value)date.value=todayISO();}
+  const k=currentMonthKey(),confirmed=salaryGuideConfirmed(k),recorded=salaryGuideRecordedAmount(k),income=hasOwnMonthIncome(k)?finiteNonNegative(monthMeta[k]?.income,0):sNum("income");
+  if(hasOwnMonthIncome(k)&&income<=0)el.innerHTML='今月の収入は <strong class="green">0円</strong> のため、現在残高への入金確認は対象外です。';
+  else if(confirmed)el.innerHTML=recorded>0?`今月は <strong class="green">${yen(recorded)}</strong> を給与・収入の入金として現在残高へ反映済みです。訂正する場合は下の履歴から取消してください。`:`今月は <strong class="green">現在残高へ反映済み</strong>として確認済みです。訂正する場合は下の履歴から取消してください。`;
+  else if(recorded>0)el.innerHTML=`今月は <strong>${yen(recorded)}</strong> を反映済みです。収入目安との差は <strong class="yellow">${yen(Math.max(0,income-recorded))}</strong>。追加で入金された分だけ反映するか、すでに全額反映済みなら確認してください。`;
+  else el.innerHTML=`今月の収入目安：<strong>${yen(income)}</strong>。実際に入金され、現在残高にまだ含めていない金額だけ加算してください。`;
+  renderSalaryDepositHistory();
+}
+function renderSalaryDepositHistory(){
+  const el=document.getElementById("salaryDepositHistory");if(!el)return;
+  const k=currentMonthKey(),raw=salaryGuideRawEntries(k).slice().sort((a,b)=>String(b.date).localeCompare(String(a.date))||Number(b.createdAt)-Number(a.createdAt));
+  if(!raw.length){el.innerHTML='<div class="footer">今月の給与・収入の入金確認履歴はまだありません。</div>';return}
+  el.innerHTML=raw.map(x=>{
+    const cancelled=salaryGuideEntryCancelled(x.id,k),isDeposit=x.type==="給与入金",isConfirm=x.type==="給与入金確認",legacy=x.type==="残高調整";
+    const label=isDeposit?"給与・収入の入金":isConfirm?"反映済み確認":"旧残高調整";
+    const amount=isDeposit||legacy?`${Number(x.amount)>=0?"+":""}${yen(x.amount)}`:"確認";
+    const btn=!cancelled&&(isDeposit||isConfirm)?`<button class="secondary small" onclick="cancelSalaryGuideEntry('${x.id}')">取消</button>`:"";
+    return `<div class="logrow" style="${cancelled?"opacity:.55":""}"><div><strong>${esc(x.memo||label)}</strong><div class="meta">${esc(x.date)} / ${label}${cancelled?" / 取消済み":legacy?" / 旧記録":""}</div></div><div class="amt ${isDeposit||legacy?"green":""}">${amount}</div>${btn}</div>`;
+  }).join("");
+}
+function runGuidedAction(id){
+  prepareCurrentMonthGuideAction();
+  if(id==="card-review"){goToAction("settings","paymentCardList");document.getElementById("settingsCardSection").open=true;return}
+  if(id==="month-income"){goToAction("ledger","saveMonthMeta");window.setTimeout(()=>document.getElementById("monthIncomeInput")?.focus({preventScroll:true}),260);return}
+  if(id==="salary-deposit"){goToAction("ledger","salaryDepositSection");window.setTimeout(()=>{document.getElementById("salaryDepositSection").open=true;prefillSalaryDeposit();document.getElementById("salaryDepositAmount")?.focus({preventScroll:true})},260);return}
+  if(id.startsWith("card-settle:")){
+    const cardId=id.slice("card-settle:".length),a=accounts.find(x=>x.id===cardId&&x.type==="クレジットカード");
+    goToAction("ledger","cardSettlementSection");
+    window.setTimeout(()=>{
+      const section=document.getElementById("cardSettlementSection");if(section)section.open=true;
+      renderCardSettlementTargets();
+      const sel=document.getElementById("cardSettlementTarget");if(sel&&a){sel.value=a.id;sel.dispatchEvent(new Event("change"))}
+      const status=a?cardGuideStatus(a,currentMonthKey()):null,amount=document.getElementById("cardSettlementAmount"),date=document.getElementById("cardSettlementDate"),memo=document.getElementById("cardSettlementMemo");
+      if(amount&&status)amount.value=Math.round(status.remaining)||"";
+      if(date)date.value=todayISO();
+      if(memo&&!memo.value&&a)memo.placeholder=`例：${monthLabel(currentMonthKey())} ${a.name}引落し`;
+      amount?.focus({preventScroll:true});
+    },260);
+    return;
+  }
+  if(id.startsWith("fixed-")){const type=id.slice(6);goToAction("ledger","fixedPayBtn");window.setTimeout(()=>{const sel=document.getElementById("fixedPayType");if(sel){sel.value=type;syncFixedPayAmount()}document.getElementById("fixedPayAmount")?.focus({preventScroll:true})},260);return}
+  if(id==="build-saving"){openBuildSavings();return}
+  if(id==="debt-repay"){openQuickRepayInput();return}
+  if(id==="expense"){openQuickExpenseInput();return}
+  openQuickExpenseInput();
+}
+window.runGuidedAction=runGuidedAction;
+
 function renderBuildMode(){
   const debt=totalDebt(),active=debt<=0;
   document.body.classList.toggle("mode-build",active);
@@ -4435,7 +4846,6 @@ function renderBuildMode(){
   const thirdLabel=document.getElementById("homeThirdMetricLabel");
   if(thirdLabel)thirdLabel.textContent=active?"BUILD貯蓄残高":"借金残高";
   const total=buildTotalSavings(),month=buildMonthSavings(),goal=Math.max(0,Number(buildState.goal||0)),monthly=Math.max(0,Number(buildState.monthlyTarget||0)),reserveRemaining=buildMonthlyReserveRemaining(),buildNet=buildAdjustedMonthNet();
-  if(modeNext)modeNext.innerHTML=active?`<strong>NEXT ACTION</strong>${monthly>0&&reserveRemaining>0?`今月あと ${yen(reserveRemaining)} 貯める`:`貯蓄または支出を記録`}`:`<strong>NEXT ACTION</strong>${debt>0?`返済を記録して ${yen(debt)} を減らす`:`現在の状態を確認`}`;
   if(active){
     document.getElementById("bossHp").textContent=yen(total);
     document.getElementById("homeLevel").textContent="BUILD MODE";
@@ -4470,7 +4880,15 @@ function renderBuildMode(){
     else box.style.display="none";
   }
   const sourceNote=document.getElementById("buildSaveSourceNote");
-  if(sourceNote){const source=pendingBuildSaveId?saves.find(s=>s.id===pendingBuildSaveId):null;sourceNote.style.display=source?"block":"none";sourceNote.innerHTML=source?`節約記録「${esc(source.memo||source.category)}」から引き継ぎ中。実際に貯蓄として保存した金額だけ、この節約候補を使用済みにします。 <button type="button" class="secondary small" style="width:auto;margin-left:5px" onclick="clearBuildSaveSource()">引継ぎ解除</button>`:"";}
+  if(sourceNote){
+    if(pendingBuildSaveAllocations.length){
+      const valid=trimPendingAllocations(pendingBuildSaveAllocations,Number.MAX_SAFE_INTEGER),total=valid.reduce((n,a)=>n+a.amount,0);
+      sourceNote.style.display=valid.length?"block":"none";
+      sourceNote.innerHTML=valid.length?`節約 ${valid.length}件から最大 ${yen(total)} をまとめて貯蓄元へ紐付け中。実際に貯蓄として保存した分だけ使用済みにします。 <button type="button" class="secondary small" style="width:auto;margin-left:5px" onclick="clearBuildSaveSource()">引継ぎ解除</button>`:"";
+    }else{
+      const source=pendingBuildSaveId?saves.find(s=>s.id===pendingBuildSaveId):null;sourceNote.style.display=source?"block":"none";sourceNote.innerHTML=source?`節約記録「${esc(source.memo||source.category)}」から引き継ぎ中。実際に貯蓄として保存した金額だけ、この節約候補を使用済みにします。 <button type="button" class="secondary small" style="width:auto;margin-left:5px" onclick="clearBuildSaveSource()">引継ぎ解除</button>`:"";
+    }
+  }
   renderBuildGoalChoices();
   renderBuildGoals();
   renderBuildDefenseFund();
@@ -4479,7 +4897,7 @@ function renderBuildMode(){
   renderBuildWithdrawalControls();
 }
 window.openBuildSavings=(preserveSource=false)=>{
-  if(!preserveSource)pendingBuildSaveId=null;
+  if(!preserveSource){pendingBuildSaveId=null;pendingBuildSaveAllocations=[];}
   go("debt");
   forceDebtToolsVisible=false;
   renderBuildMode();
@@ -4591,6 +5009,9 @@ function refresh(){
   setMetric("arrearsView",yen(sNum("arrears")),sNum("arrears")>0?"red":"");
   setMetric("totalDebtView",yen(debt),debt>0?"red":"green");
   renderBuildMode();
+  applyGuideTimingToForm();
+  renderMonthlyGuide();
+  renderSalaryDepositStatus();
 
   renderExpensePaymentOptions();
   renderPaymentCardManager();
@@ -4747,10 +5168,81 @@ function renderAccounts(){
     return `<div class="account"><div class="accountTop"><div><div class="accountName">${esc(a.name)} ${status}</div><div class="accountMeta">${esc(a.type)} / 毎月返済 ${yen(a.payment)}${a.apr?` / 年利 ${a.apr}%`:""}</div>${extra}</div><div><div class="accountBal">${balanceTitle}</div><div style="display:flex;gap:6px;justify-content:flex-end;margin-top:6px">${buttons}</div></div></div></div>`;
   }).join("");
 }
-function buildAppliedForSaveId(id){return buildSavings.filter(x=>x.sourceSaveId===id).reduce((n,x)=>n+Math.max(0,Number(x.sourceAppliedAmount||0)),0)}
+function buildAppliedForSaveId(id){return buildSavings.reduce((n,x)=>n+sourceSaveAllocationForId(x,id),0)}
 function saveRemainingPotential(s){return Math.max(0,Number(s?.amount||0)-Number(s?.appliedAmount||0)-buildAppliedForSaveId(s?.id))}
+function potentialSavesForMonth(k=selectedMonth){return saves.filter(s=>String(s.date||"").startsWith(k)).slice().sort((a,b)=>eventSortValue(a).localeCompare(eventSortValue(b)))}
+function potentialMonthSummary(k=selectedMonth){
+  const arr=potentialSavesForMonth(k),total=arr.reduce((n,s)=>n+Math.max(0,Number(s.amount||0)),0),remaining=arr.reduce((n,s)=>n+saveRemainingPotential(s),0);
+  return {arr,total,remaining,applied:Math.max(0,total-remaining),count:arr.length,remainingCount:arr.filter(s=>saveRemainingPotential(s)>0).length};
+}
+function allocatePotentialFromMonth(amount,k=selectedMonth){
+  let left=Math.max(0,Number(amount||0)),out=[];
+  for(const s of potentialSavesForMonth(k)){
+    if(left<=0)break;
+    const remain=saveRemainingPotential(s);if(!(remain>0))continue;
+    const use=Math.min(remain,left);if(use>0){out.push({saveId:s.id,amount:use});left-=use;}
+  }
+  return out;
+}
+function trimPendingAllocations(raw,amount){
+  let left=Math.max(0,Number(amount||0)),out=[];
+  for(const a of Array.isArray(raw)?raw:[]){
+    if(left<=0)break;
+    const s=saves.find(x=>x.id===a.saveId);if(!s)continue;
+    const cap=Math.min(Math.max(0,Number(a.amount||0)),saveRemainingPotential(s),left);
+    if(cap>0){out.push({saveId:s.id,amount:cap});left-=cap;}
+  }
+  return out;
+}
+function repaymentSourceAllocationsForAmount(amount){
+  if(pendingSaveAllocations.length)return trimPendingAllocations(pendingSaveAllocations,amount);
+  if(!pendingSaveId)return [];
+  const s=saves.find(x=>x.id===pendingSaveId);if(!s)return [];
+  const use=Math.min(saveRemainingPotential(s),Math.max(0,Number(amount||0)));
+  return use>0?[{saveId:s.id,amount:use}]:[];
+}
+function buildSourceAllocationsForAmount(amount){
+  if(pendingBuildSaveAllocations.length)return trimPendingAllocations(pendingBuildSaveAllocations,amount);
+  if(!pendingBuildSaveId)return [];
+  const s=saves.find(x=>x.id===pendingBuildSaveId);if(!s)return [];
+  const use=Math.min(saveRemainingPotential(s),Math.max(0,Number(amount||0)));
+  return use>0?[{saveId:s.id,amount:use}]:[];
+}
+function renderBulkPotentialTransfer(){
+  const card=document.getElementById("potentialTransferCard"),totalEl=document.getElementById("bulkPotentialTotal"),appliedEl=document.getElementById("bulkPotentialApplied"),remainingEl=document.getElementById("bulkPotentialRemaining"),input=document.getElementById("bulkPotentialApplyAmount"),btn=document.getElementById("bulkPotentialApplyBtn"),note=document.getElementById("bulkPotentialApplyNote");
+  if(!card||!totalEl||!appliedEl||!remainingEl||!input||!btn||!note)return;
+  const summary=potentialMonthSummary(selectedMonth),buildMode=totalDebt()<=0;
+  totalEl.textContent=yen(summary.total);appliedEl.textContent=yen(summary.applied);remainingEl.textContent=yen(summary.remaining);
+  if(document.activeElement!==input)input.value=summary.remaining>0?Math.round(summary.remaining):"";
+  input.max=String(Math.max(0,summary.remaining));btn.disabled=!(summary.remaining>0);
+  btn.textContent=buildMode?"まとめて貯蓄入力へ":"まとめて返済入力へ";
+  note.innerHTML=summary.remaining>0
+    ?`${monthLabel(selectedMonth)}の未振替 <strong>${yen(summary.remaining)}</strong>（${summary.remainingCount}件）を、古い節約から順に配分します。全額でなく一部だけでも指定できます。${buildMode?"実際に貯蓄として保存するまではBUILD貯蓄・現在残高は変わりません。":"実際に返済として保存するまでは借金残高・現在残高は変わりません。"}`
+    :`${monthLabel(selectedMonth)}の節約はすべて貯蓄・返済へ反映済み、または節約記録がありません。`;
+}
+function beginBulkPotentialTransfer(){
+  const input=document.getElementById("bulkPotentialApplyAmount"),summary=potentialMonthSummary(selectedMonth),amount=debtYen(input?.value||0);
+  if(!(summary.remaining>0)){alert("まとめて反映できる未振替の節約がありません。");return}
+  if(!(amount>0)){alert("まとめて反映する金額を1円以上で入力してください。");return}
+  if(amount>summary.remaining){alert(`未振替の節約 ${yen(summary.remaining)} を超える金額は指定できません。`);return}
+  const allocations=allocatePotentialFromMonth(amount,selectedMonth),allocated=allocations.reduce((n,a)=>n+a.amount,0);
+  if(Math.abs(allocated-amount)>0.000001){alert("節約の配分を作成できませんでした。画面を更新してもう一度お試しください。");return}
+  if(totalDebt()<=0){
+    pendingBuildSaveId=null;pendingBuildSaveAllocations=allocations;
+    document.getElementById("buildSaveAmount").value=Math.round(amount);
+    document.getElementById("buildSaveMemo").value=`${monthLabel(selectedMonth)}の節約${allocations.length}件分をまとめて貯蓄`;
+    openBuildSavings(true);
+  }else{
+    pendingSaveId=null;pendingSaveAllocations=allocations;
+    document.getElementById("actualRepayAmount").value=Math.round(amount);
+    document.getElementById("actualRepayMemo").value=`${monthLabel(selectedMonth)}の節約${allocations.length}件分をまとめて返済`;
+    renderPendingSaveLink();
+    document.getElementById("actualRepayAmount")?.scrollIntoView({behavior:"smooth",block:"center"});
+  }
+}
 function renderSaves(){
   const list=document.getElementById("saveHistory"),arr=selectedSaves().slice().sort((a,b)=>eventSortValue(b).localeCompare(eventSortValue(a))),buildMode=totalDebt()<=0;
+  renderBulkPotentialTransfer();
   if(!arr.length){list.innerHTML='<div class="footer">この月の節約記録はまだありません。</div>';return}
   list.innerHTML=arr.map(s=>{
     const repayApplied=Math.min(Number(s.amount||0),Number(s.appliedAmount||0)),buildApplied=buildAppliedForSaveId(s.id),applied=Math.min(Number(s.amount||0),repayApplied+buildApplied),left=saveRemainingPotential(s);
@@ -4768,14 +5260,23 @@ window.removeSave=id=>{
   if(Number(s.appliedAmount||0)>0||buildAppliedForSaveId(s.id)>0){alert("この節約記録は返済または貯蓄に紐付いているため削除できません。先に紐付いた記録を取り消してください。");return}
   if(!confirm(`${s.memo||s.category} ${yen(s.amount)} の節約記録を削除しますか？`))return;
   if(pendingSaveId===id)pendingSaveId=null;
+  if(pendingBuildSaveId===id)pendingBuildSaveId=null;
+  pendingSaveAllocations=pendingSaveAllocations.filter(a=>a.saveId!==id);
+  pendingBuildSaveAllocations=pendingBuildSaveAllocations.filter(a=>a.saveId!==id);
   saves=saves.filter(x=>x.id!==id);
   commit({planChange:false});
 };
 function renderPendingSaveLink(){
   const box=document.getElementById("pendingSaveLink"),btn=document.getElementById("unlinkSaveBtn");
-  if(!pendingSaveId){
-    box.style.display="none";btn.style.display="none";box.innerHTML="";return;
+  if(!box||!btn)return;
+  if(pendingSaveAllocations.length){
+    const valid=trimPendingAllocations(pendingSaveAllocations,Number.MAX_SAFE_INTEGER),total=valid.reduce((n,a)=>n+a.amount,0);
+    if(!valid.length){pendingSaveAllocations=[];box.style.display="none";btn.style.display="none";box.innerHTML="";return}
+    box.style.display="block";btn.style.display="block";
+    box.innerHTML=`<strong>節約 ${valid.length}件をまとめて返済元へ紐付け中</strong><br>最大 ${yen(total)} を未振替節約から使用します。返済額がこれより多い場合、超過分は通常の返済として記録されます。`;
+    return;
   }
+  if(!pendingSaveId){box.style.display="none";btn.style.display="none";box.innerHTML="";return;}
   const s=saves.find(x=>x.id===pendingSaveId);
   if(!s){pendingSaveId=null;box.style.display="none";btn.style.display="none";return}
   const remain=saveRemainingPotential(s);
@@ -4785,7 +5286,7 @@ function renderPendingSaveLink(){
 function renderPayments(){
   const list=document.getElementById("paymentHistory"),arr=selectedPayments().slice().sort((a,b)=>b.date.localeCompare(a.date)||b.id.localeCompare(a.id));
   if(!arr.length){list.innerHTML='<div class="footer">この月の実返済記録はまだありません。</div>';return}
-  list.innerHTML=arr.map(p=>`<div class="logrow"><div><strong>${esc(p.targetName)}</strong><div class="meta">${esc(p.date)}${p.memo?` / ${esc(p.memo)}`:""}</div></div><div class="amt">${yen(p.amount)}</div><button class="secondary small" onclick="removePayment('${p.id}')">取消</button></div>`).join("");
+  list.innerHTML=arr.map(p=>`<div class="logrow"><div><strong>${esc(p.targetName)}</strong><div class="meta">${esc(p.date)}${p.memo?` / ${esc(p.memo)}`:""}</div>${sourceSaveAllocationDetailsHtml(p)}</div><div class="amt">${yen(p.amount)}</div><button class="secondary small" onclick="removePayment('${p.id}')">取消</button></div>`).join("");
 }
 function fixedLabel(type){
   return {rent:"家賃",utility:"水道光熱費",phone:"通信費",fixed:"その他固定費"}[type]||type;
@@ -4794,7 +5295,7 @@ function renderFixedPayments(){
   const list=document.getElementById("fixedPaymentHistory");
   const arr=fixedPayments.filter(p=>String(p.date).startsWith(selectedMonth)).slice().sort((a,b)=>b.date.localeCompare(a.date)||b.id.localeCompare(a.id));
   if(!arr.length){list.innerHTML='<div class="footer">この月の固定費支払記録はまだありません。</div>';return}
-  list.innerHTML=arr.map(p=>`<div class="logrow"><div><strong>${esc(fixedLabel(p.type))}</strong><div class="meta">${esc(p.date)}${p.memo?` / ${esc(p.memo)}`:""}</div></div><div class="amt">${yen(p.amount)}</div><button class="secondary small" onclick="removeFixedPayment('${p.id}')">取消</button></div>`).join("");
+  list.innerHTML=arr.map(p=>`<div class="logrow"><div><strong>${esc(fixedLabel(p.type))}${p.completesMonth?` <span class="green">✓ 今月分完了</span>`:""}</strong><div class="meta">${esc(p.date)}${p.memo?` / ${esc(p.memo)}`:""}${p.completesMonth&&p.plannedAmount>0?` / 設定目安 ${yen(p.plannedAmount)}`:""}</div></div><div class="amt">${yen(p.amount)}</div><button class="secondary small" onclick="removeFixedPayment('${p.id}')">取消</button></div>`).join("");
 }
 function renderCashLedger(){
   const list=document.getElementById("cashLedger"),arr=cashLedger.slice().sort((a,b)=>String(b.date).localeCompare(String(a.date))||String(b.id).localeCompare(String(a.id))).slice(0,10);
@@ -4962,17 +5463,19 @@ window.useSaveForBuild=id=>{
   if(totalDebt()>0){alert("借金があるため、節約分は返済候補として利用してください。");return}
   const remain=saveRemainingPotential(s);
   if(!(remain>0)){alert("貯蓄入力へ引き継げる節約額がありません。");return}
+  pendingBuildSaveAllocations=[];
   pendingBuildSaveId=id;
   document.getElementById("buildSaveAmount").value=Math.round(remain);
   document.getElementById("buildSaveMemo").value=`節約分を貯蓄：${s.memo||s.category}`;
   openBuildSavings(true);
 };
-window.clearBuildSaveSource=()=>{pendingBuildSaveId=null;renderBuildMode()};
+window.clearBuildSaveSource=()=>{pendingBuildSaveId=null;pendingBuildSaveAllocations=[];renderBuildMode()};
 window.useSaveForRepayment=id=>{
   const s=saves.find(x=>x.id===id);if(!s)return;
   if(totalDebt()<=0){useSaveForBuild(id);return}
   const remain=saveRemainingPotential(s);
   if(!(remain>0)){alert("返済入力へ引き継げる節約額がありません。");return}
+  pendingSaveAllocations=[];
   pendingSaveId=id;
   document.getElementById("actualRepayAmount").value=remain;
   document.getElementById("actualRepayMemo").value=`節約分を返済：${s.memo||s.category}`;
@@ -5006,9 +5509,9 @@ window.removePayment=id=>{
     adjustBossForHistoricalCorrection(Number(p.amount||0),transactionTime(p));
   }
 
-  if(p.sourceSaveId){
-    const s=saves.find(x=>x.id===p.sourceSaveId);
-    if(s)s.appliedAmount=Math.max(0,Number(s.appliedAmount||0)-Number(p.sourceAppliedAmount||0));
+  for(const a of sourceSaveAllocationsForRecord(p)){
+    const s=saves.find(x=>x.id===a.saveId);
+    if(s)s.appliedAmount=Math.max(0,Number(s.appliedAmount||0)-Number(a.amount||0));
   }
   payments=payments.filter(x=>x.id!==id);
   commit({
@@ -5020,8 +5523,9 @@ window.removePayment=id=>{
 window.removeFixedPayment=id=>{
   const p=fixedPayments.find(x=>x.id===id);if(!p)return;
   const isCurrent=String(p.date).startsWith(currentMonthKey());
+  const completionNote=p.completesMonth?"\nこの記録を取り消すと「今月分完了」も取り消されます。":"";
   const detail=isCurrent?"\n現在月なので現在残高も元に戻します。":"\n過去月の履歴だけ削除し、現在残高は変更しません。";
-  if(!confirm(`${fixedLabel(p.type)} ${yen(p.amount)} の支払記録を取り消しますか？${detail}`))return;
+  if(!confirm(`${fixedLabel(p.type)} ${yen(p.amount)} の支払記録を取り消しますか？${completionNote}${detail}`))return;
   if(isCurrent)adjustBalance(Number(p.amount||0),"固定費取消",`固定費取消：${fixedLabel(p.type)}`,todayISO(),p.id);
   fixedPayments=fixedPayments.filter(x=>x.id!==id);
   if(commit({planChange:false}))syncFixedPayAmount();
@@ -5112,6 +5616,68 @@ document.getElementById("nextMonth").onclick=()=>{
   refresh();
 };
 
+function recordSalaryDeposit(){
+  if(setupRequired){alert("先に初回設定を保存してください。");return false}
+  const amount=Math.round(Number(document.getElementById("salaryDepositAmount")?.value||0)),date=String(document.getElementById("salaryDepositDate")?.value||todayISO()),memo=String(document.getElementById("salaryDepositMemo")?.value||"").trim(),k=currentMonthKey();
+  if(!(Number.isFinite(amount)&&amount>0)){alert("実際に入金された金額を1円以上で入力してください。");return false}
+  if(!validDateString(date)||!date.startsWith(k)||date>todayISO()){alert("給与・収入の入金日は現在月の今日以前を指定してください。");return false}
+  const expected=hasOwnMonthIncome(k)?finiteNonNegative(monthMeta[k]?.income,0):sNum("income"),recorded=salaryGuideRecordedAmount(k),nextRecorded=recorded+amount,explicitConfirmed=salaryGuideExplicitConfirmed(k);
+  if(hasOwnMonthIncome(k)&&expected<=0){
+    if(!confirm(`今月の収入は0円として保存されています。\n追加収入として ${yen(amount)} を現在残高へ加算しますか？`))return false;
+  }
+  if(explicitConfirmed&&!confirm(`今月は「現在残高へ反映済み」として確認済みです。\n追加で入金された収入として ${yen(amount)} を加算しますか？`))return false;
+  if((hasOwnMonthIncome(k)||expected>0)&&nextRecorded>expected+0.000001){
+    const over=nextRecorded-expected;
+    if(!confirm(`今月の収入目安は ${yen(expected)}、すでに ${yen(recorded)} を反映済みです。\n今回を加えると累計 ${yen(nextRecorded)}（目安より ${yen(over)} 多い）になります。\n追加収入として反映しますか？`))return false;
+  }
+  const refId=uid();
+  if(!adjustBalance(amount,"給与入金",memo||`${monthLabel(k)} 給与・収入の入金`,date,refId)){alert("現在残高へ給与・収入の入金を反映できませんでした。");return false}
+  if(!commit({planChange:false}))return false;
+  const balanceEl=document.getElementById("balance");if(balanceEl&&document.activeElement!==balanceEl)balanceEl.value=settingsState.balance;
+  document.getElementById("salaryDepositAmount").value="";document.getElementById("salaryDepositMemo").value="";
+  showSaveToast("給与・収入の入金を現在残高へ反映しました",yen(amount));
+  return true;
+}
+function confirmSalaryDepositReflected(){
+  if(setupRequired){alert("先に初回設定を保存してください。");return false}
+  const k=currentMonthKey(),expected=hasOwnMonthIncome(k)?finiteNonNegative(monthMeta[k]?.income,0):sNum("income");
+  if(hasOwnMonthIncome(k)&&expected<=0){alert("今月の収入は0円のため、入金確認は対象外です。");return false}
+  if(salaryGuideExplicitConfirmed(k)){alert("今月はすでに「現在残高へ反映済み」として確認されています。訂正する場合は下の履歴から確認記録を取り消してください。");return false}
+  if(salaryGuideConfirmed(k)){alert("今月の収入目安分はすでに給与・収入の入金として反映済みです。追加の確認記録は不要です。");return false}
+  if(!confirm("給与・収入はすでに現在残高へ反映済みで、追加の残高加算は不要ですか？\nこの操作では現在残高を変更しません。"))return false;
+  if(!addCashLedger(0,"給与入金確認","給与・収入は現在残高へ反映済み",todayISO(),uid())){alert("確認記録を保存できませんでした。");return false}
+  if(!commit({planChange:false}))return false;
+  showSaveToast("給与・収入の入金を確認済みにしました","現在残高は変更していません");
+  return true;
+}
+function cancelSalaryGuideEntry(id){
+  if(setupRequired){alert("先に初回設定を保存してください。");return false}
+  const k=currentMonthKey(),entry=salaryGuideRawEntries(k).find(x=>x.id===id);
+  if(!entry){alert("取消対象の記録が見つかりません。");return false}
+  if(salaryGuideEntryCancelled(entry.id,k)){alert("この記録はすでに取消済みです。");return false}
+  if(entry.type==="給与入金"){
+    const amount=Math.max(0,Number(entry.amount||0));
+    if(amount<=0){alert("取消できる入金額がありません。");return false}
+    if(sNum("balance")+0.000001<amount){alert(`現在残高が ${yen(amount)} 未満のため、この入金をそのまま取り消すと残高がマイナスになります。\n先に現在残高を確認・調整してください。`);return false}
+    if(!confirm(`${yen(amount)} の給与・収入の入金記録を取り消しますか？\n現在残高も同額減らして元に戻します。`))return false;
+    if(!adjustBalance(-amount,"給与入金取消",`取消: ${entry.memo||"給与・収入の入金"}`,todayISO(),entry.id)){alert("現在残高を戻せませんでした。");return false}
+  }else if(entry.type==="給与入金確認"){
+    if(!confirm("「現在残高へ反映済み」の確認記録を取り消しますか？\n現在残高は変更しません。"))return false;
+    if(!addCashLedger(0,"給与入金確認取消",`取消: ${entry.memo||"反映済み確認"}`,todayISO(),entry.id)){alert("確認取消を保存できませんでした。");return false}
+  }else{
+    alert("旧版の残高調整記録はこの画面から取消できません。通常の現在残高調整で訂正してください。");
+    return false;
+  }
+  if(!commit({planChange:false}))return false;
+  const balanceEl=document.getElementById("balance");if(balanceEl&&document.activeElement!==balanceEl)balanceEl.value=settingsState.balance;
+  renderSalaryDepositStatus();
+  showSaveToast("給与・収入の記録を取り消しました",entry.type==="給与入金"?"現在残高も元に戻しました":"確認状態を未確認へ戻しました");
+  return true;
+}
+window.cancelSalaryGuideEntry=cancelSalaryGuideEntry;
+document.getElementById("salaryDepositBtn")?.addEventListener("click",recordSalaryDeposit);
+document.getElementById("salaryDepositConfirmBtn")?.addEventListener("click",confirmSalaryDepositReflected);
+
 document.getElementById("saveMonthMeta").onclick=()=>{
   if(setupRequired){
     alert("先に初回設定を保存してください。");
@@ -5172,31 +5738,35 @@ document.getElementById("addExpenseBtn").onclick=()=>{
 
 function syncFixedPayAmount(){
   const type=document.getElementById("fixedPayType").value;
-  const planned=sNum(type);
-  const paid=fixedPayments.filter(p=>p.type===type&&String(p.date).startsWith(currentMonthKey())).reduce((s,p)=>s+Number(p.amount||0),0);
-  const input=document.getElementById("fixedPayAmount");
+  const planned=Math.max(0,sNum(type)),paid=Math.max(0,fixedPaidByType(currentMonthKey(),type)),completed=fixedMonthCompleted(currentMonthKey(),type);
+  const input=document.getElementById("fixedPayAmount"),complete=document.getElementById("fixedPayCompleteMonth"),status=document.getElementById("fixedPayStatus");
   const remaining=Math.max(0,planned-paid);
   input.value="";
-  input.placeholder=remaining>0?`残り目安 ${Math.round(remaining).toLocaleString("ja-JP")}`:"支払額を入力";
+  input.placeholder=completed?"追加支払額を入力":remaining>0?`残り目安 ${Math.round(remaining).toLocaleString("ja-JP")}`:"支払額を入力";
+  if(complete)complete.checked=!completed;
+  if(status){
+    if(completed)status.innerHTML=`<strong class="green">✓ 今月分は完了済み</strong><br>設定目安 ${yen(planned)} / 実績 ${yen(paid)}。追加請求があればその金額だけ記録できます。`;
+    else status.innerHTML=`設定目安 ${yen(planned)} / 支払済み ${yen(paid)} / あと目安 ${yen(remaining)}。<br>請求額が目安より安くても、今月分を払い終えたなら「この支払いで今月分は完了」をONにしてください。`;
+  }
 }
 document.getElementById("fixedPayType").onchange=syncFixedPayAmount;
 document.getElementById("fixedPayBtn").onclick=()=>{
-  const type=document.getElementById("fixedPayType").value,amount=formNum("fixedPayAmount"),date=document.getElementById("fixedPayDate").value||todayISO(),memo=document.getElementById("fixedPayMemo").value.trim();
+  const type=document.getElementById("fixedPayType").value,amount=formNum("fixedPayAmount"),date=document.getElementById("fixedPayDate").value||todayISO(),memo=document.getElementById("fixedPayMemo").value.trim(),markComplete=!!document.getElementById("fixedPayCompleteMonth")?.checked;
   if(!date.startsWith(currentMonthKey())||date>todayISO()){alert("固定費の支払日は現在月の今日以前を指定してください。");return}
   if(amount<=0){alert("支払額を入力してください。");return}
   if(amount>sNum("balance")){alert(`現在残高 ${yen(sNum("balance"))} を超えています。`);return}
-  const already=fixedPayments.filter(p=>p.type===type&&String(p.date).startsWith(currentMonthKey())).reduce((s,p)=>s+Number(p.amount||0),0);
-  const planned=sNum(type);
-  const remain=Math.max(0,planned-already);
-  if(amount>remain){
+  const already=Math.max(0,fixedPaidByType(currentMonthKey(),type)),planned=Math.max(0,sNum(type)),remain=Math.max(0,planned-already),after=already+amount;
+  if(markComplete&&planned>0&&after+0.000001<planned){
+    if(!confirm(`${fixedLabel(type)}の設定目安は ${yen(planned)} ですが、今回の登録後の実績は ${yen(after)} です。\n\n実際の今月請求が ${yen(after)} で完了している場合は「OK」を押してください。\n部分払いの場合は「キャンセル」して「この支払いで今月分は完了」をOFFにしてください。`))return;
+  }else if(amount>remain&&planned>0&&!fixedMonthCompleted(currentMonthKey(),type)){
     const msg=remain>0
-      ?`${fixedLabel(type)}の今月設定額は ${yen(planned)}、支払済みは ${yen(already)}、残りは ${yen(remain)} です。\n今回 ${yen(amount)} を登録すると設定額を超えます。\nそれでも登録しますか？`
-      :`${fixedLabel(type)}は今月設定額 ${yen(planned)} をすでに支払済みです。\nさらに ${yen(amount)} を登録しますか？`;
+      ?`${fixedLabel(type)}の今月設定目安は ${yen(planned)}、支払済みは ${yen(already)}、残り目安は ${yen(remain)} です。\n今回 ${yen(amount)} を登録すると設定目安を超えます。\nそれでも登録しますか？`
+      :`${fixedLabel(type)}は今月の設定目安 ${yen(planned)} に達しています。\nさらに ${yen(amount)} を登録しますか？`;
     if(!confirm(msg))return;
   }
   const id=uid();
   adjustBalance(-amount,"固定費支払",`${fixedLabel(type)}${memo?`：${memo}`:""}`,date,id);
-  fixedPayments.push({id,date,createdAt:Date.now(),type,amount,memo});
+  fixedPayments.push({id,date,createdAt:Date.now(),type,amount,memo,completesMonth:markComplete,plannedAmount:markComplete?planned:0});
   if(commit({planChange:false})){
     document.getElementById("fixedPayMemo").value="";
     selectedMonth=currentMonthKey();
@@ -5206,7 +5776,7 @@ document.getElementById("fixedPayBtn").onclick=()=>{
     syncMonthInputs();
     syncFixedPayAmount();
     refresh();
-    showSaveToast("固定費の支払いを登録しました",`${fixedLabel(type)} / ${yen(amount)}`);
+    showSaveToast("固定費の支払いを登録しました",`${fixedLabel(type)} / ${yen(amount)}${markComplete?" / 今月分完了":" / 部分支払"}`);
   }
 };
 
@@ -5254,9 +5824,10 @@ document.getElementById("balanceAdjustBtn").onclick=()=>{
 };
 
 document.getElementById("paymentCardAddBtn")?.addEventListener("click",()=>{
-  const name=document.getElementById("paymentCardName")?.value||"",balance=debtYen(Number(document.getElementById("paymentCardBalance")?.value||0)),payment=Number(document.getElementById("paymentCardMonthlyPayment")?.value||0),apr=Number(document.getElementById("paymentCardApr")?.value||0),payInFull=!!document.getElementById("paymentCardPayInFull")?.checked;
+  const name=document.getElementById("paymentCardName")?.value||"",balance=debtYen(Number(document.getElementById("paymentCardBalance")?.value||0)),payment=Number(document.getElementById("paymentCardMonthlyPayment")?.value||0),apr=Number(document.getElementById("paymentCardApr")?.value||0),payInFull=!!document.getElementById("paymentCardPayInFull")?.checked,guideDueDayRaw=Number(document.getElementById("paymentCardGuideDueDay")?.value||0);
   if(!Number.isFinite(payment)||payment<0||!Number.isFinite(apr)||apr<0){alert("毎月返済額・年利は0以上で入力してください。");return}
-  const id=appendSimpleCreditCard(name,balance,payment,apr,payInFull);if(!id)return;
+  if(!Number.isFinite(guideDueDayRaw)||guideDueDayRaw<0||guideDueDayRaw>31||Math.trunc(guideDueDayRaw)!==guideDueDayRaw){alert("カード引落日は1〜31の整数、または空欄で入力してください。");return}
+  const id=appendSimpleCreditCard(name,balance,payment,apr,payInFull,guideDueDayRaw);if(!id)return;
   clearPaymentCardAddForm();
   const detail=balance>0?`${String(name).trim()} / ${payInFull?"一括払い予定":"借金扱い残高"} ${yen(balance)}`:`${String(name).trim()} / ${payInFull?"毎月一括払い":"借金扱い"}`;
   showSaveToast(setupRequired?"カードを初期設定へ追加しました":"クレジットカードを追加しました",detail);
@@ -5402,6 +5973,30 @@ function renderSaveMemoPresets(){
 document.getElementById("saveCategory")?.addEventListener("change",renderSaveMemoPresets);
 renderSaveMemoPresets();
 
+function bulkSaveDraft(){
+  return [...document.querySelectorAll(".bulk-save-amount")].map(input=>({input,category:String(input.dataset.category||"その他"),amount:Math.max(0,Math.round(Number(input.value||0)))})).filter(x=>x.amount>0);
+}
+function renderBulkSaveSummary(){
+  const el=document.getElementById("bulkSaveSummary");if(!el)return;
+  const rows=bulkSaveDraft(),total=rows.reduce((n,x)=>n+x.amount,0);
+  el.innerHTML=rows.length?`入力 ${rows.length}件 / 合計 <strong class="green">${yen(total)}</strong><br>${rows.map(x=>`${esc(categoryDisplayLabel(x.category))} ${yen(x.amount)}`).join(" ・ ")}`:"金額を入力すると合計を表示します。";
+}
+document.querySelectorAll(".bulk-save-amount").forEach(input=>input.addEventListener("input",renderBulkSaveSummary));
+function recordBulkPotentialSaves(){
+  const rows=bulkSaveDraft();if(!rows.length){alert("まとめて記録する節約額を1件以上入力してください。");return false}
+  const total=rows.reduce((n,x)=>n+x.amount,0),now=Date.now();
+  const added=rows.map((x,i)=>({id:uid(),date:todayISO(),createdAt:now+i,category:x.category,memo:`${categoryDisplayLabel(x.category)}をまとめて記録`,amount:x.amount,appliedAmount:0}));
+  saves.push(...added);
+  if(!commit({planChange:false}))return false;
+  rows.forEach(x=>x.input.value="");renderBulkSaveSummary();
+  const buildMode=totalDebt()<=0;
+  document.getElementById("saveResult").innerHTML=`<div class="status green">POTENTIAL +${yen(total)}</div><div class="reason">${added.length}件の節約を個別履歴としてまとめて記録しました。</div><div class="detail">${buildMode?"節約候補は実貯蓄へ自動加算しません。実際に確保した金額だけ貯蓄として記録してください。":"借金残高はまだ減っていません。実際に返済した金額だけ返済として記録してください。"}</div>`;
+  showSaveToast("節約をまとめて記録しました",`${added.length}件 / ${yen(total)}`);
+  return true;
+}
+document.getElementById("bulkSaveBtn")?.addEventListener("click",recordBulkPotentialSaves);
+document.getElementById("bulkPotentialApplyBtn")?.addEventListener("click",beginBulkPotentialTransfer);
+
 document.getElementById("saveActionBtn").onclick=()=>{
   const amount=formNum("saveAmount"),memo=document.getElementById("saveMemo").value.trim(),cat=document.getElementById("saveCategory").value,buildMode=totalDebt()<=0;
   if(amount<=0){alert("金額を入力してください");return}
@@ -5432,7 +6027,7 @@ document.getElementById("saveActionBtn").onclick=()=>{
 };
 
 document.getElementById("unlinkSaveBtn").onclick=()=>{
-  pendingSaveId=null;
+  pendingSaveId=null;pendingSaveAllocations=[];
   renderPendingSaveLink();
 };
 document.getElementById("actualRepayBtn").onclick=()=>{
@@ -5452,23 +6047,19 @@ document.getElementById("actualRepayBtn").onclick=()=>{
   const id=uid();
   adjustBalance(-amount,"実返済",`返済：${info.name}`,date,id);
 
-  let sourceAppliedAmount=0;
-  if(pendingSaveId){
-    const s=saves.find(x=>x.id===pendingSaveId);
-    if(s){
-      const remain=saveRemainingPotential(s);
-      sourceAppliedAmount=Math.min(remain,amount);
-      s.appliedAmount=Number(s.appliedAmount||0)+sourceAppliedAmount;
-    }
+  const sourceSaveAllocations=repaymentSourceAllocationsForAmount(amount);
+  for(const a of sourceSaveAllocations){
+    const s=saves.find(x=>x.id===a.saveId);
+    if(s)s.appliedAmount=Number(s.appliedAmount||0)+Number(a.amount||0);
   }
   const paymentEvent={
     id,date,createdAt:Date.now(),targetType:info.type,targetId:info.id||"",targetName:info.name,amount,memo,
-    sourceSaveId:pendingSaveId||"",sourceAppliedAmount,
+    ...sourceSaveLegacyFields(sourceSaveAllocations),
     campaignBefore,campaignAfter:null
   };
   payments.push(paymentEvent);
-  const originalPendingSaveId=pendingSaveId;
-  pendingSaveId=null;
+  const originalPendingSaveId=pendingSaveId,originalPendingSaveAllocations=pendingSaveAllocations.map(a=>({...a}));
+  pendingSaveId=null;pendingSaveAllocations=[];
   if(commit({
     planChange:false,
     afterSnapshot:cp=>{paymentEvent.campaignAfter=cp}
@@ -5483,7 +6074,7 @@ document.getElementById("actualRepayBtn").onclick=()=>{
     refresh();
     showSaveToast("返済を記録しました",`${info.name} / ${yen(amount)}`);
   }else{
-    pendingSaveId=originalPendingSaveId;
+    pendingSaveId=originalPendingSaveId;pendingSaveAllocations=originalPendingSaveAllocations;
     renderPendingSaveLink();
   }
 };
@@ -5829,19 +6420,15 @@ document.getElementById("buildSaveBtn").onclick=()=>{
   const id=uid(),createdAt=Date.now();
   if(transferFromBalance&&!adjustBalance(-amount,"貯蓄振替",`貯蓄振替：${memo||"BUILD貯蓄"}`,date,id)){alert("現在残高から貯蓄へ振替できませんでした。");return}
   const goalId=selectedBuildGoalId&&buildGoalById(selectedBuildGoalId)?selectedBuildGoalId:"";
-  const sourceSaveId=pendingBuildSaveId||"";let sourceAppliedAmount=0;
-  if(sourceSaveId){
-    const source=saves.find(s=>s.id===sourceSaveId);
-    if(source){const remain=saveRemainingPotential(source);sourceAppliedAmount=Math.min(remain,amount);}
-  }
-  buildSavings.push({id,date,createdAt,amount,memo,transferFromBalance,goalId,sourceSaveId:sourceAppliedAmount>0?sourceSaveId:"",sourceAppliedAmount});
+  const sourceSaveAllocations=buildSourceAllocationsForAmount(amount);
+  buildSavings.push({id,date,createdAt,amount,memo,transferFromBalance,goalId,...sourceSaveLegacyFields(sourceSaveAllocations)});
   const balanceEl=document.getElementById("balance");if(balanceEl&&document.activeElement!==balanceEl)balanceEl.value=settingsState.balance;
-  const originalPendingBuildSaveId=pendingBuildSaveId;pendingBuildSaveId=null;
+  const originalPendingBuildSaveId=pendingBuildSaveId,originalPendingBuildSaveAllocations=pendingBuildSaveAllocations.map(a=>({...a}));pendingBuildSaveId=null;pendingBuildSaveAllocations=[];
   if(saveBuildOnly()){
     document.getElementById("buildSaveAmount").value="";document.getElementById("buildSaveMemo").value="";selectedBuildGoalId="";renderBuildGoalChoices();
     const goalLabel=buildGoalName(goalId);
     showSaveToast("貯蓄を記録しました",transferFromBalance?`${yen(amount)} / ${goalLabel} / 現在残高から振替`:`${yen(amount)} / ${goalLabel}`);
-  }else pendingBuildSaveId=originalPendingBuildSaveId;
+  }else {pendingBuildSaveId=originalPendingBuildSaveId;pendingBuildSaveAllocations=originalPendingBuildSaveAllocations;}
 };
 document.getElementById("buildWithdrawBtn").onclick=()=>{
   const amount=Number(document.getElementById("buildWithdrawAmount").value||0),date=String(document.getElementById("buildWithdrawDate").value||""),memo=String(document.getElementById("buildWithdrawMemo").value||"").trim(),transferToBalance=!!document.getElementById("buildWithdrawTransfer")?.checked;
@@ -5906,13 +6493,27 @@ document.getElementById("saveBuildSettingsBtn").onclick=()=>{
 };
 document.getElementById("showDebtToolsBtn").onclick=()=>{forceDebtToolsVisible=true;renderBuildMode();document.getElementById("debtModePanel")?.scrollIntoView({behavior:"smooth",block:"start"})};
 
+document.getElementById("saveGuideTimingBtn")?.addEventListener("click",()=>{
+  const next=readGuideTimingForm();if(!next)return;
+  if(setupRequired){
+    guideTimingState=next;
+    showSaveToast("予定日を初期設定へ反映しました","下の「設定を保存」で他の初期設定と一緒に確定します");
+    return;
+  }
+  guideTimingState=next;
+  if(commit({planChange:false}))showSaveToast("入力案内の予定日を保存しました","予定日前はNEXT ACTIONで急かさないようになります");
+});
+
 document.getElementById("saveSettingsBtn").onclick=()=>{
   const next=readSettingsForm();if(!next)return;
+  const nextGuide=readGuideTimingForm();if(!nextGuide)return;
 
   if(setupRequired){
     if(next.income<=0){alert("初回設定では、実際の手取り月収を1円以上で入力してください。");return}
     if(next.dailyLimit<=0&&!confirm("1日の使いすぎ防止上限が0円です。\nこのまま保存すると、外食・コンビニ・趣味・買い物は1日0円を上限として判定されます。\n0円のまま保存しますか？")){document.getElementById("settingsGuardSection").open=true;document.getElementById("dailyLimit").focus();return}
     settingsState={...next};
+    syncCurrentFixedCompletionPlans();
+    guideTimingState={...nextGuide};
     const oldSetupRequired=setupRequired;
     setupRequired=false;
     if(commit({planChange:true,completionReason:"correction"})){
@@ -5957,6 +6558,7 @@ document.getElementById("saveSettingsBtn").onclick=()=>{
   if(mode==="activity"&&otherDiff>0)baseNext.otherDebt=otherBefore;
   if(mode==="activity"&&arrDiff>0)baseNext.arrears=arrearsBefore;
   settingsState={...settingsState,...baseNext};
+  syncCurrentFixedCompletionPlans();
 
   if(balanceDiff!==0)addCashLedger(balanceDiff,"残高設定訂正","設定画面で現在残高を変更",todayISO());
 
@@ -5993,6 +6595,7 @@ document.getElementById("saveSettingsBtn").onclick=()=>{
   if(mode==="activity"&&(otherDiff>0||arrDiff>0))resetBossForGenuineDebtEntry();
   document.getElementById("debtCorrectionMode").value="activity";
   if(document.getElementById("otherDebtIncreaseCash"))document.getElementById("otherDebtIncreaseCash").checked=false;
+  guideTimingState={...nextGuide};
   if(saveAll()){syncFixedPayAmount();refresh();}
   else {applySettingsToForm();refresh();}
 };
@@ -6054,7 +6657,7 @@ document.getElementById("importFile").onchange=e=>{
       const rawBundle=JSON.parse(reader.result);
       if(!rawBundle||rawBundle.app!=="Debt Breaker")throw new Error("Debt Breakerのバックアップではありません。");
       const rawSchema=Number(rawBundle.schemaVersion||0);
-      if(![23,SCHEMA_VERSION].includes(rawSchema))throw new Error(`このバックアップはSchema v${rawSchema}です。現在のアプリではSchema v23またはv${SCHEMA_VERSION}を復元できます。`);
+      if(![23,24,25,SCHEMA_VERSION].includes(rawSchema))throw new Error(`このバックアップはSchema v${rawSchema}です。現在のアプリではSchema v23 / v24 / v25 / v${SCHEMA_VERSION}を復元できます。`);
       const b=normalizeBundleDeep(rawBundle,{requireComplete:true});
       if(!confirm(setupRequired
         ?"このバックアップを読み込んで初期設定を完了しますか？"
@@ -6211,7 +6814,7 @@ function loadAll(){
   if(storageWriteBlocked){
     settingsState={...FRESH_SETTINGS};
     expenses=[];saves=[];accounts=[];payments=[];cardSettlements=[];fixedPayments=[];feeEvents=[];borrowEvents=[];cashLedger=[];
-    buildState={...DEFAULT_BUILD_STATE};buildSavings=[];buildWithdrawals=[];buildGoals=[];debtTransitionState={...DEFAULT_DEBT_TRANSITION_STATE};selectedBuildGoalId="";editingBuildGoalId="";
+    buildState={...DEFAULT_BUILD_STATE};buildSavings=[];buildWithdrawals=[];buildGoals=[];debtTransitionState={...DEFAULT_DEBT_TRANSITION_STATE};guideTimingState={...DEFAULT_GUIDE_TIMING_STATE};selectedBuildGoalId="";editingBuildGoalId="";
     monthMeta={};monthSnapshots={};accountMonthState={};correctionAllocationState={};
     selectedMonth=currentMonthKey();
     bossInitialDebt=null;bossStartedAt=null;bossStartedAtApprox=false;
@@ -6229,7 +6832,7 @@ function loadAll(){
   if(freshInstall&&!canonical){
     settingsState={...FRESH_SETTINGS};
     expenses=[];saves=[];accounts=[];payments=[];cardSettlements=[];fixedPayments=[];feeEvents=[];borrowEvents=[];cashLedger=[];
-    buildState={...DEFAULT_BUILD_STATE};buildSavings=[];buildWithdrawals=[];buildGoals=[];debtTransitionState={...DEFAULT_DEBT_TRANSITION_STATE};selectedBuildGoalId="";editingBuildGoalId="";
+    buildState={...DEFAULT_BUILD_STATE};buildSavings=[];buildWithdrawals=[];buildGoals=[];debtTransitionState={...DEFAULT_DEBT_TRANSITION_STATE};guideTimingState={...DEFAULT_GUIDE_TIMING_STATE};selectedBuildGoalId="";editingBuildGoalId="";
     monthMeta={};monthSnapshots={};accountMonthState={};correctionAllocationState={};
     selectedMonth=currentMonthKey();
     bossInitialDebt=null;bossStartedAt=null;bossStartedAtApprox=false;
